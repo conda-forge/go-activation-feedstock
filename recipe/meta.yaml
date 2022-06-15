@@ -1,5 +1,5 @@
 {% if version is undefined %}
-{% set version = "1.18.3" %}
+{% set version = "1.17.8" %}
 {% endif %}
 
 {% if cross_target_platform is undefined %}
@@ -9,6 +9,11 @@
 package:
   name: go-{{ go_variant_str }}_{{ cross_target_platform }}
   version: {{ version }}
+
+source:
+  # Add a source we don't need so that the bot issues PRs here automatically.
+  url: https://dl.google.com/{{ name }}/go{{ version }}.src.tar.gz
+  sha256: 2effcd898140da79a061f3784ca4f8d8b13d811fb2abe9dad2404442dabbdf7a
 
 build:
   number: 0
