@@ -7,7 +7,7 @@ Package license: BSD-3-Clause
 
 Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/go-activation-feedstock/blob/main/LICENSE.txt)
 
-Summary: The Go (cgo) compiler activation scripts for conda-build.
+Summary: The Go (nocgo) compiler activation scripts for conda-build.
 
 Development: https://go.googlesource.com/go
 
