@@ -1,4 +1,4 @@
-{% set version = "1.18.5" %}
+{% set version = "1.19.1" %}
 
 {% if cross_target_platform is undefined %}
 {% set cross_target_platform = "foo" %}
@@ -11,12 +11,12 @@ package:
 source:
   # Add a source we don't need so that the bot issues PRs here automatically.
   url: https://dl.google.com/go/go{{ version }}.src.tar.gz
-  sha256: 9920d3306a1ac536cdd2c796d6cb3c54bc559c226fc3cc39c32f1e0bd7f50d2a
+  sha256: 27871baa490f3401414ad793fba49086f6c855b1c584385ed7771e1204c7e179
 
 build:
   number: 0
-  run_exports:          # [cross_target_platform == "osx-64"]
-    strong_constrains:  # [cross_target_platform == "osx-64"]
+  run_exports:   # [cross_target_platform == "osx-64"]
+    strong_constrains:   # [cross_target_platform == "osx-64"]
       - __osx>=10.12    # [cross_target_platform == "osx-64"]
 
 requirements:
