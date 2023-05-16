@@ -18,6 +18,9 @@ build:
   run_exports:          # [cross_target_platform == "osx-64"]
     strong_constrains:  # [cross_target_platform == "osx-64"]
       - __osx>=10.12    # [cross_target_platform == "osx-64"]
+  run_exports:                            # [cross_target_platform == "linux-64" and go_variant_str == "cgo"]
+    strong:                               # [cross_target_platform == "linux-64" and go_variant_str == "cgo"]
+      - __glibc >=2.17                    # [cross_target_platform == "linux-64" and go_variant_str == "cgo"]
 
 requirements:
   build:
