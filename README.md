@@ -11,6 +11,29 @@ Home: http://golang.org
 
 Package license: BSD-3-Clause
 
+Summary: The Go (nocgo) compiler activation scripts for conda-build.
+
+Development: https://go.googlesource.com/go
+
+Documentation: https://golang.org/doc
+
+This package enables the CONDA_GO_COMPILER environment variable.
+This variable is used by conda-forge's patched GoLang compiler to
+set conda-aware GOBIN and GOPATH default values. These default
+values are ignored if GOBIN and GOPATH environment variables
+are set independently by the user.
+
+Futhermore, this package set the correct GOARCH and GOOS
+environment variables to enable cross-compilation.
+
+
+About go-cgo_linux-aarch64
+--------------------------
+
+Home: http://golang.org
+
+Package license: BSD-3-Clause
+
 Summary: The Go (cgo) compiler activation scripts for conda-build.
 
 Development: https://go.googlesource.com/go
@@ -27,14 +50,14 @@ Futhermore, this package set the correct GOARCH and GOOS
 environment variables to enable cross-compilation.
 
 
-About go-nocgo_osx-arm64
-------------------------
+About go-cgo_osx-arm64
+----------------------
 
 Home: http://golang.org
 
 Package license: BSD-3-Clause
 
-Summary: The Go (nocgo) compiler activation scripts for conda-build.
+Summary: The Go (cgo) compiler activation scripts for conda-build.
 
 Development: https://go.googlesource.com/go
 
@@ -50,14 +73,14 @@ Futhermore, this package set the correct GOARCH and GOOS
 environment variables to enable cross-compilation.
 
 
-About go-nocgo_linux-aarch64
-----------------------------
+About go-cgo_linux-ppc64le
+--------------------------
 
 Home: http://golang.org
 
 Package license: BSD-3-Clause
 
-Summary: The Go (nocgo) compiler activation scripts for conda-build.
+Summary: The Go (cgo) compiler activation scripts for conda-build.
 
 Development: https://go.googlesource.com/go
 
@@ -73,37 +96,14 @@ Futhermore, this package set the correct GOARCH and GOOS
 environment variables to enable cross-compilation.
 
 
-About go-nocgo_linux-64
------------------------
-
-Home: http://golang.org
-
-Package license: BSD-3-Clause
-
-Summary: The Go (nocgo) compiler activation scripts for conda-build.
-
-Development: https://go.googlesource.com/go
-
-Documentation: https://golang.org/doc
-
-This package enables the CONDA_GO_COMPILER environment variable.
-This variable is used by conda-forge's patched GoLang compiler to
-set conda-aware GOBIN and GOPATH default values. These default
-values are ignored if GOBIN and GOPATH environment variables
-are set independently by the user.
-
-Futhermore, this package set the correct GOARCH and GOOS
-environment variables to enable cross-compilation.
-
-
-About go-nocgo_win-64
+About go-cgo_linux-64
 ---------------------
 
 Home: http://golang.org
 
 Package license: BSD-3-Clause
 
-Summary: The Go (nocgo) compiler activation scripts for conda-build.
+Summary: The Go (cgo) compiler activation scripts for conda-build.
 
 Development: https://go.googlesource.com/go
 
@@ -119,14 +119,14 @@ Futhermore, this package set the correct GOARCH and GOOS
 environment variables to enable cross-compilation.
 
 
-About go-nocgo_linux-ppc64le
-----------------------------
+About go-cgo_win-64
+-------------------
 
 Home: http://golang.org
 
 Package license: BSD-3-Clause
 
-Summary: The Go (nocgo) compiler activation scripts for conda-build.
+Summary: The Go (cgo) compiler activation scripts for conda-build.
 
 Development: https://go.googlesource.com/go
 
@@ -142,14 +142,14 @@ Futhermore, this package set the correct GOARCH and GOOS
 environment variables to enable cross-compilation.
 
 
-About go-nocgo_osx-64
----------------------
+About go-cgo_osx-64
+-------------------
 
 Home: http://golang.org
 
 Package license: BSD-3-Clause
 
-Summary: The Go (nocgo) compiler activation scripts for conda-build.
+Summary: The Go (cgo) compiler activation scripts for conda-build.
 
 Development: https://go.googlesource.com/go
 
