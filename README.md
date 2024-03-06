@@ -27,7 +27,7 @@ Futhermore, this package set the correct GOARCH and GOOS
 environment variables to enable cross-compilation.
 
 
-About go-nocgo_linux-ppc64le
+About go-nocgo_linux-aarch64
 ----------------------------
 
 Home: http://golang.org
@@ -73,7 +73,7 @@ Futhermore, this package set the correct GOARCH and GOOS
 environment variables to enable cross-compilation.
 
 
-About go-nocgo_linux-aarch64
+About go-nocgo_linux-ppc64le
 ----------------------------
 
 Home: http://golang.org
