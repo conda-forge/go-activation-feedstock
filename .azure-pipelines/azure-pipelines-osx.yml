@@ -33,6 +33,7 @@ jobs:
         CONFIG: osx_arm64_GOARCHarm64cross_target_platformosx-arm64go_variant_strnocgogo_variant_ver2.2.0
         UPLOAD_PACKAGES: 'True'
   timeoutInMinutes: 360
+  variables: {}
 
   steps:
   # TODO: Fast finish on azure pipelines?
