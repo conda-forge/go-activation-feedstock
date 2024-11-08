@@ -50,8 +50,8 @@ Futhermore, this package set the correct GOARCH and GOOS
 environment variables to enable cross-compilation.
 
 
-About go-cgo_linux-ppc64le
---------------------------
+About go-cgo_win-64
+-------------------
 
 Home: http://golang.org
 
@@ -96,7 +96,7 @@ Futhermore, this package set the correct GOARCH and GOOS
 environment variables to enable cross-compilation.
 
 
-About go-cgo_linux-aarch64
+About go-cgo_linux-ppc64le
 --------------------------
 
 Home: http://golang.org
@@ -119,8 +119,8 @@ Futhermore, this package set the correct GOARCH and GOOS
 environment variables to enable cross-compilation.
 
 
-About go-cgo_win-64
--------------------
+About go-cgo_linux-aarch64
+--------------------------
 
 Home: http://golang.org
 
