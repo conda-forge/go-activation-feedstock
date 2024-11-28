@@ -5,7 +5,7 @@
 jobs:
 - job: osx
   pool:
-    vmImage: macOS-12
+    vmImage: macOS-13
   strategy:
     matrix:
       osx_64_GOARCHamd64cross_target_platformosx-64go_variant_strcgogo_variant_ver2.3.0:
