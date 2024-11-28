@@ -1,13 +1,9 @@
-BUILD:
-- aarch64-conda_cos7-linux-gnu
 GOARCH:
 - arm64
 GOOS:
 - darwin
-cdt_arch:
-- aarch64
 cdt_name:
-- cos7
+- conda
 channel_sources:
 - conda-forge
 channel_targets:
@@ -15,7 +11,7 @@ channel_targets:
 cross_target_platform:
 - osx-arm64
 docker_image:
-- quay.io/condaforge/linux-anvil-cos7-x86_64
+- quay.io/condaforge/linux-anvil-x86_64:alma9
 go_variant_str:
 - cgo
 go_variant_ver:
