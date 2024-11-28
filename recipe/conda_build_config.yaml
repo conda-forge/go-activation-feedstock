@@ -25,9 +25,6 @@ go_variant_str:
 go_variant_ver:
   - 2.3.0
   - 2.2.0
-cgo:
-  - true
-  - false
 zip_keys:
   -
     - cross_target_platform
@@ -36,4 +33,3 @@ zip_keys:
   -
     - go_variant_str
     - go_variant_ver
-    - cgo
