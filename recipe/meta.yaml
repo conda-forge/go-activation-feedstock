@@ -1,4 +1,4 @@
-% set version = "1.24.1" %}
+{% set version = "1.24.1" %}
 
 {% if cross_target_platform is undefined %}
 {% set cross_target_platform = "foo" %}
