@@ -11,7 +11,7 @@ package:
 source:
   # Add a source we don't need so that the bot issues PRs here automatically.
   url: https://dl.google.com/go/go{{ version }}.src.tar.gz
-  sha256: 039c5b04e65279daceee8a6f71e70bd05cf5b801782b6f77c6e19e2ed0511222
+  sha256: 7cfabd46b73eb4c26b19d69515dd043d7183a6559acccd5cfdb25eb6b266a458
 
 build:
   number: 0
