@@ -14,7 +14,7 @@ source:
   sha256: 7cfabd46b73eb4c26b19d69515dd043d7183a6559acccd5cfdb25eb6b266a458
 
 build:
-  number: 0
+  number: 1
   run_exports:   # [cross_target_platform == "osx-64"]
     strong_constrains:   # [cross_target_platform == "osx-64"]
       - __osx>=10.12    # [cross_target_platform == "osx-64"]
