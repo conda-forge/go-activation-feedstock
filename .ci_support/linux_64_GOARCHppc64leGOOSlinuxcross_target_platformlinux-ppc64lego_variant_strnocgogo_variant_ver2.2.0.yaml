@@ -2,8 +2,6 @@ GOARCH:
 - ppc64le
 GOOS:
 - linux
-cdt_name:
-- conda
 channel_sources:
 - conda-forge
 channel_targets:
