@@ -2,8 +2,6 @@ GOARCH:
 - amd64
 GOOS:
 - windows
-cdt_name:
-- conda
 channel_sources:
 - conda-forge
 channel_targets:
