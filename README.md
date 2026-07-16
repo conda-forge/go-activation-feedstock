@@ -96,6 +96,29 @@ Futhermore, this package set the correct GOARCH and GOOS
 environment variables to enable cross-compilation.
 
 
+About go-nocgo_win-arm64
+------------------------
+
+Home: http://golang.org
+
+Package license: BSD-3-Clause
+
+Summary: The Go (nocgo) compiler activation scripts for conda-build.
+
+Development: https://go.googlesource.com/go
+
+Documentation: https://golang.org/doc
+
+This package enables the CONDA_GO_COMPILER environment variable.
+This variable is used by conda-forge's patched GoLang compiler to
+set conda-aware GOBIN and GOPATH default values. These default
+values are ignored if GOBIN and GOPATH environment variables
+are set independently by the user.
+
+Futhermore, this package set the correct GOARCH and GOOS
+environment variables to enable cross-compilation.
+
+
 About go-nocgo_linux-64
 -----------------------
 
@@ -218,17 +241,24 @@ Current build status
                 </a>
               </td>
             </tr><tr>
-              <td>win_64_go_variant_strcgogo_variant_ver2.3.0</td>
+              <td>win_64_GOARCHamd64cross_target_platformwin-64go_variant_strcgogo_variant_ver2.3.0</td>
               <td>
                 <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=13693&branchName=main">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/go-activation-feedstock?branchName=main&jobName=win&configuration=win%20win_64_go_variant_strcgogo_variant_ver2.3.0" alt="variant">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/go-activation-feedstock?branchName=main&jobName=win&configuration=win%20win_64_GOARCHamd64cross_target_platformwin-64go_variant_strcgogo_variant_ver2.3.0" alt="variant">
                 </a>
               </td>
             </tr><tr>
-              <td>win_64_go_variant_strnocgogo_variant_ver2.2.0</td>
+              <td>win_64_GOARCHamd64cross_target_platformwin-64go_variant_strnocgogo_variant_ver2.2.0</td>
               <td>
                 <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=13693&branchName=main">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/go-activation-feedstock?branchName=main&jobName=win&configuration=win%20win_64_go_variant_strnocgogo_variant_ver2.2.0" alt="variant">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/go-activation-feedstock?branchName=main&jobName=win&configuration=win%20win_64_GOARCHamd64cross_target_platformwin-64go_variant_strnocgogo_variant_ver2.2.0" alt="variant">
+                </a>
+              </td>
+            </tr><tr>
+              <td>win_64_GOARCHarm64cross_target_platformwin-arm64go_variant_strnocgogo_variant_ver2.2.0</td>
+              <td>
+                <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=13693&branchName=main">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/go-activation-feedstock?branchName=main&jobName=win&configuration=win%20win_64_GOARCHarm64cross_target_platformwin-arm64go_variant_strnocgogo_variant_ver2.2.0" alt="variant">
                 </a>
               </td>
             </tr>
@@ -256,6 +286,7 @@ Current release info
 | [![Conda Recipe](https://img.shields.io/badge/recipe-go--nocgo__osx--64-green.svg)](https://anaconda.org/conda-forge/go-nocgo_osx-64) | [![Conda Downloads](https://img.shields.io/conda/dn/conda-forge/go-nocgo_osx-64.svg)](https://anaconda.org/conda-forge/go-nocgo_osx-64) | [![Conda Version](https://img.shields.io/conda/vn/conda-forge/go-nocgo_osx-64.svg)](https://anaconda.org/conda-forge/go-nocgo_osx-64) | [![Conda Platforms](https://img.shields.io/conda/pn/conda-forge/go-nocgo_osx-64.svg)](https://anaconda.org/conda-forge/go-nocgo_osx-64) |
 | [![Conda Recipe](https://img.shields.io/badge/recipe-go--nocgo__osx--arm64-green.svg)](https://anaconda.org/conda-forge/go-nocgo_osx-arm64) | [![Conda Downloads](https://img.shields.io/conda/dn/conda-forge/go-nocgo_osx-arm64.svg)](https://anaconda.org/conda-forge/go-nocgo_osx-arm64) | [![Conda Version](https://img.shields.io/conda/vn/conda-forge/go-nocgo_osx-arm64.svg)](https://anaconda.org/conda-forge/go-nocgo_osx-arm64) | [![Conda Platforms](https://img.shields.io/conda/pn/conda-forge/go-nocgo_osx-arm64.svg)](https://anaconda.org/conda-forge/go-nocgo_osx-arm64) |
 | [![Conda Recipe](https://img.shields.io/badge/recipe-go--nocgo__win--64-green.svg)](https://anaconda.org/conda-forge/go-nocgo_win-64) | [![Conda Downloads](https://img.shields.io/conda/dn/conda-forge/go-nocgo_win-64.svg)](https://anaconda.org/conda-forge/go-nocgo_win-64) | [![Conda Version](https://img.shields.io/conda/vn/conda-forge/go-nocgo_win-64.svg)](https://anaconda.org/conda-forge/go-nocgo_win-64) | [![Conda Platforms](https://img.shields.io/conda/pn/conda-forge/go-nocgo_win-64.svg)](https://anaconda.org/conda-forge/go-nocgo_win-64) |
+| [![Conda Recipe](https://img.shields.io/badge/recipe-go--nocgo__win--arm64-green.svg)](https://anaconda.org/conda-forge/go-nocgo_win-arm64) | [![Conda Downloads](https://img.shields.io/conda/dn/conda-forge/go-nocgo_win-arm64.svg)](https://anaconda.org/conda-forge/go-nocgo_win-arm64) | [![Conda Version](https://img.shields.io/conda/vn/conda-forge/go-nocgo_win-arm64.svg)](https://anaconda.org/conda-forge/go-nocgo_win-arm64) | [![Conda Platforms](https://img.shields.io/conda/pn/conda-forge/go-nocgo_win-arm64.svg)](https://anaconda.org/conda-forge/go-nocgo_win-arm64) |
 
 Installing go-activation
 ========================
@@ -267,16 +298,16 @@ conda config --add channels conda-forge
 conda config --set channel_priority strict
 ```
 
-Once the `conda-forge` channel has been enabled, `go-cgo_linux-64, go-cgo_linux-aarch64, go-cgo_linux-ppc64le, go-cgo_osx-64, go-cgo_osx-arm64, go-cgo_win-64, go-nocgo_linux-64, go-nocgo_linux-aarch64, go-nocgo_linux-ppc64le, go-nocgo_osx-64, go-nocgo_osx-arm64, go-nocgo_win-64` can be installed with `conda`:
+Once the `conda-forge` channel has been enabled, `go-cgo_linux-64, go-cgo_linux-aarch64, go-cgo_linux-ppc64le, go-cgo_osx-64, go-cgo_osx-arm64, go-cgo_win-64, go-nocgo_linux-64, go-nocgo_linux-aarch64, go-nocgo_linux-ppc64le, go-nocgo_osx-64, go-nocgo_osx-arm64, go-nocgo_win-64, go-nocgo_win-arm64` can be installed with `conda`:
 
 ```
-conda install go-cgo_linux-64 go-cgo_linux-aarch64 go-cgo_linux-ppc64le go-cgo_osx-64 go-cgo_osx-arm64 go-cgo_win-64 go-nocgo_linux-64 go-nocgo_linux-aarch64 go-nocgo_linux-ppc64le go-nocgo_osx-64 go-nocgo_osx-arm64 go-nocgo_win-64
+conda install go-cgo_linux-64 go-cgo_linux-aarch64 go-cgo_linux-ppc64le go-cgo_osx-64 go-cgo_osx-arm64 go-cgo_win-64 go-nocgo_linux-64 go-nocgo_linux-aarch64 go-nocgo_linux-ppc64le go-nocgo_osx-64 go-nocgo_osx-arm64 go-nocgo_win-64 go-nocgo_win-arm64
 ```
 
 or with `mamba`:
 
 ```
-mamba install go-cgo_linux-64 go-cgo_linux-aarch64 go-cgo_linux-ppc64le go-cgo_osx-64 go-cgo_osx-arm64 go-cgo_win-64 go-nocgo_linux-64 go-nocgo_linux-aarch64 go-nocgo_linux-ppc64le go-nocgo_osx-64 go-nocgo_osx-arm64 go-nocgo_win-64
+mamba install go-cgo_linux-64 go-cgo_linux-aarch64 go-cgo_linux-ppc64le go-cgo_osx-64 go-cgo_osx-arm64 go-cgo_win-64 go-nocgo_linux-64 go-nocgo_linux-aarch64 go-nocgo_linux-ppc64le go-nocgo_osx-64 go-nocgo_osx-arm64 go-nocgo_win-64 go-nocgo_win-arm64
 ```
 
 It is possible to list all of the versions of `go-cgo_linux-64` available on your platform with `conda`:

@@ -116,6 +116,15 @@ description = "Debug go-activation-feedstock with variant linux_64_GOARCHarm64GO
 [tasks."inspect-linux_64_GOARCHarm64GOOSlinuxcross_target_platformlinux-aarch64go_variant_strnocgogo_variant_ver2.2.0"]
 cmd = "inspect_artifacts --recipe-dir recipe -m .ci_support/linux_64_GOARCHarm64GOOSlinuxcross_target_platformlinux-aarch64go_variant_strnocgogo_variant_ver2.2.0.yaml"
 description = "List contents of go-activation-feedstock packages built for variant linux_64_GOARCHarm64GOOSlinuxcross_target_platformlinux-aarch64go_variant_strnocgogo_variant_ver2.2.0"
+[tasks."build-linux_64_GOARCHarm64GOOSwindowscross_target_platformwin-arm64go_variant_strnocgogo_variant_ver2.2.0"]
+cmd = "conda-build build recipe -m .ci_support/linux_64_GOARCHarm64GOOSwindowscross_target_platformwin-arm64go_variant_strnocgogo_variant_ver2.2.0.yaml --suppress-variables --clobber-file .ci_support/clobber_linux_64_GOARCHarm64GOOSwindowscross_target_platformwin-arm64go_variant_strnocgogo_variant_ver2.2.0.yaml"
+description = "Build go-activation-feedstock with variant linux_64_GOARCHarm64GOOSwindowscross_target_platformwin-arm64go_variant_strnocgogo_variant_ver2.2.0 directly (without setup scripts)"
+[tasks."debug-linux_64_GOARCHarm64GOOSwindowscross_target_platformwin-arm64go_variant_strnocgogo_variant_ver2.2.0"]
+cmd = "conda-build debug recipe -m .ci_support/linux_64_GOARCHarm64GOOSwindowscross_target_platformwin-arm64go_variant_strnocgogo_variant_ver2.2.0.yaml"
+description = "Debug go-activation-feedstock with variant linux_64_GOARCHarm64GOOSwindowscross_target_platformwin-arm64go_variant_strnocgogo_variant_ver2.2.0 directly (without setup scripts)"
+[tasks."inspect-linux_64_GOARCHarm64GOOSwindowscross_target_platformwin-arm64go_variant_strnocgogo_variant_ver2.2.0"]
+cmd = "inspect_artifacts --recipe-dir recipe -m .ci_support/linux_64_GOARCHarm64GOOSwindowscross_target_platformwin-arm64go_variant_strnocgogo_variant_ver2.2.0.yaml"
+description = "List contents of go-activation-feedstock packages built for variant linux_64_GOARCHarm64GOOSwindowscross_target_platformwin-arm64go_variant_strnocgogo_variant_ver2.2.0"
 [tasks."build-linux_64_GOARCHppc64leGOOSlinuxcross_target_platformlinux-ppc64lego_variant_strcgogo_variant_ver2.3.0"]
 cmd = "conda-build build recipe -m .ci_support/linux_64_GOARCHppc64leGOOSlinuxcross_target_platformlinux-ppc64lego_variant_strcgogo_variant_ver2.3.0.yaml --suppress-variables --clobber-file .ci_support/clobber_linux_64_GOARCHppc64leGOOSlinuxcross_target_platformlinux-ppc64lego_variant_strcgogo_variant_ver2.3.0.yaml"
 description = "Build go-activation-feedstock with variant linux_64_GOARCHppc64leGOOSlinuxcross_target_platformlinux-ppc64lego_variant_strcgogo_variant_ver2.3.0 directly (without setup scripts)"
@@ -386,24 +395,33 @@ description = "Debug go-activation-feedstock with variant osx_arm64_GOARCHarm64c
 [tasks."inspect-osx_arm64_GOARCHarm64cross_target_platformosx-arm64go_variant_strnocgogo_variant_ver2.2.0"]
 cmd = "inspect_artifacts --recipe-dir recipe -m .ci_support/osx_arm64_GOARCHarm64cross_target_platformosx-arm64go_variant_strnocgogo_variant_ver2.2.0.yaml"
 description = "List contents of go-activation-feedstock packages built for variant osx_arm64_GOARCHarm64cross_target_platformosx-arm64go_variant_strnocgogo_variant_ver2.2.0"
-[tasks."build-win_64_go_variant_strcgogo_variant_ver2.3.0"]
-cmd = "conda-build build recipe -m .ci_support/win_64_go_variant_strcgogo_variant_ver2.3.0.yaml --suppress-variables --clobber-file .ci_support/clobber_win_64_go_variant_strcgogo_variant_ver2.3.0.yaml"
-description = "Build go-activation-feedstock with variant win_64_go_variant_strcgogo_variant_ver2.3.0 directly (without setup scripts)"
-[tasks."debug-win_64_go_variant_strcgogo_variant_ver2.3.0"]
-cmd = "conda-build debug recipe -m .ci_support/win_64_go_variant_strcgogo_variant_ver2.3.0.yaml"
-description = "Debug go-activation-feedstock with variant win_64_go_variant_strcgogo_variant_ver2.3.0 directly (without setup scripts)"
-[tasks."inspect-win_64_go_variant_strcgogo_variant_ver2.3.0"]
-cmd = "inspect_artifacts --recipe-dir recipe -m .ci_support/win_64_go_variant_strcgogo_variant_ver2.3.0.yaml"
-description = "List contents of go-activation-feedstock packages built for variant win_64_go_variant_strcgogo_variant_ver2.3.0"
-[tasks."build-win_64_go_variant_strnocgogo_variant_ver2.2.0"]
-cmd = "conda-build build recipe -m .ci_support/win_64_go_variant_strnocgogo_variant_ver2.2.0.yaml --suppress-variables --clobber-file .ci_support/clobber_win_64_go_variant_strnocgogo_variant_ver2.2.0.yaml"
-description = "Build go-activation-feedstock with variant win_64_go_variant_strnocgogo_variant_ver2.2.0 directly (without setup scripts)"
-[tasks."debug-win_64_go_variant_strnocgogo_variant_ver2.2.0"]
-cmd = "conda-build debug recipe -m .ci_support/win_64_go_variant_strnocgogo_variant_ver2.2.0.yaml"
-description = "Debug go-activation-feedstock with variant win_64_go_variant_strnocgogo_variant_ver2.2.0 directly (without setup scripts)"
-[tasks."inspect-win_64_go_variant_strnocgogo_variant_ver2.2.0"]
-cmd = "inspect_artifacts --recipe-dir recipe -m .ci_support/win_64_go_variant_strnocgogo_variant_ver2.2.0.yaml"
-description = "List contents of go-activation-feedstock packages built for variant win_64_go_variant_strnocgogo_variant_ver2.2.0"
+[tasks."build-win_64_GOARCHamd64cross_target_platformwin-64go_variant_strcgogo_variant_ver2.3.0"]
+cmd = "conda-build build recipe -m .ci_support/win_64_GOARCHamd64cross_target_platformwin-64go_variant_strcgogo_variant_ver2.3.0.yaml --suppress-variables --clobber-file .ci_support/clobber_win_64_GOARCHamd64cross_target_platformwin-64go_variant_strcgogo_variant_ver2.3.0.yaml"
+description = "Build go-activation-feedstock with variant win_64_GOARCHamd64cross_target_platformwin-64go_variant_strcgogo_variant_ver2.3.0 directly (without setup scripts)"
+[tasks."debug-win_64_GOARCHamd64cross_target_platformwin-64go_variant_strcgogo_variant_ver2.3.0"]
+cmd = "conda-build debug recipe -m .ci_support/win_64_GOARCHamd64cross_target_platformwin-64go_variant_strcgogo_variant_ver2.3.0.yaml"
+description = "Debug go-activation-feedstock with variant win_64_GOARCHamd64cross_target_platformwin-64go_variant_strcgogo_variant_ver2.3.0 directly (without setup scripts)"
+[tasks."inspect-win_64_GOARCHamd64cross_target_platformwin-64go_variant_strcgogo_variant_ver2.3.0"]
+cmd = "inspect_artifacts --recipe-dir recipe -m .ci_support/win_64_GOARCHamd64cross_target_platformwin-64go_variant_strcgogo_variant_ver2.3.0.yaml"
+description = "List contents of go-activation-feedstock packages built for variant win_64_GOARCHamd64cross_target_platformwin-64go_variant_strcgogo_variant_ver2.3.0"
+[tasks."build-win_64_GOARCHamd64cross_target_platformwin-64go_variant_strnocgogo_variant_ver2.2.0"]
+cmd = "conda-build build recipe -m .ci_support/win_64_GOARCHamd64cross_target_platformwin-64go_variant_strnocgogo_variant_ver2.2.0.yaml --suppress-variables --clobber-file .ci_support/clobber_win_64_GOARCHamd64cross_target_platformwin-64go_variant_strnocgogo_variant_ver2.2.0.yaml"
+description = "Build go-activation-feedstock with variant win_64_GOARCHamd64cross_target_platformwin-64go_variant_strnocgogo_variant_ver2.2.0 directly (without setup scripts)"
+[tasks."debug-win_64_GOARCHamd64cross_target_platformwin-64go_variant_strnocgogo_variant_ver2.2.0"]
+cmd = "conda-build debug recipe -m .ci_support/win_64_GOARCHamd64cross_target_platformwin-64go_variant_strnocgogo_variant_ver2.2.0.yaml"
+description = "Debug go-activation-feedstock with variant win_64_GOARCHamd64cross_target_platformwin-64go_variant_strnocgogo_variant_ver2.2.0 directly (without setup scripts)"
+[tasks."inspect-win_64_GOARCHamd64cross_target_platformwin-64go_variant_strnocgogo_variant_ver2.2.0"]
+cmd = "inspect_artifacts --recipe-dir recipe -m .ci_support/win_64_GOARCHamd64cross_target_platformwin-64go_variant_strnocgogo_variant_ver2.2.0.yaml"
+description = "List contents of go-activation-feedstock packages built for variant win_64_GOARCHamd64cross_target_platformwin-64go_variant_strnocgogo_variant_ver2.2.0"
+[tasks."build-win_64_GOARCHarm64cross_target_platformwin-arm64go_variant_strnocgogo_variant_ver2.2.0"]
+cmd = "conda-build build recipe -m .ci_support/win_64_GOARCHarm64cross_target_platformwin-arm64go_variant_strnocgogo_variant_ver2.2.0.yaml --suppress-variables --clobber-file .ci_support/clobber_win_64_GOARCHarm64cross_target_platformwin-arm64go_variant_strnocgogo_variant_ver2.2.0.yaml"
+description = "Build go-activation-feedstock with variant win_64_GOARCHarm64cross_target_platformwin-arm64go_variant_strnocgogo_variant_ver2.2.0 directly (without setup scripts)"
+[tasks."debug-win_64_GOARCHarm64cross_target_platformwin-arm64go_variant_strnocgogo_variant_ver2.2.0"]
+cmd = "conda-build debug recipe -m .ci_support/win_64_GOARCHarm64cross_target_platformwin-arm64go_variant_strnocgogo_variant_ver2.2.0.yaml"
+description = "Debug go-activation-feedstock with variant win_64_GOARCHarm64cross_target_platformwin-arm64go_variant_strnocgogo_variant_ver2.2.0 directly (without setup scripts)"
+[tasks."inspect-win_64_GOARCHarm64cross_target_platformwin-arm64go_variant_strnocgogo_variant_ver2.2.0"]
+cmd = "inspect_artifacts --recipe-dir recipe -m .ci_support/win_64_GOARCHarm64cross_target_platformwin-arm64go_variant_strnocgogo_variant_ver2.2.0.yaml"
+description = "List contents of go-activation-feedstock packages built for variant win_64_GOARCHarm64cross_target_platformwin-arm64go_variant_strnocgogo_variant_ver2.2.0"
 
 [feature.smithy.dependencies]
 conda-smithy = "*"
