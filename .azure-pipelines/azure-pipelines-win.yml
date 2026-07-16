@@ -8,8 +8,8 @@ jobs:
     vmImage: windows-2022
   strategy:
     matrix:
-      win_64_go_variant_strcgogo_variant_ver2.3.0:
-        CONFIG: win_64_go_variant_strcgogo_variant_ver2.3.0
+      win_64_GOARCHamd64cross_target_platformwin-64go_variant_strcgogo_variant_ver2.3.0:
+        CONFIG: win_64_GOARCHamd64cross_target_platformwin-64go_variant_strcgogo_variant_ver2.3.0
         UPLOAD_PACKAGES: 'True'
         build_workspace_dir: D:\\bld\\
         free_disk_space: skip
@@ -17,8 +17,17 @@ jobs:
         resize_partitions: false
         store_build_artifacts: false
         tools_install_dir: D:\Miniforge
-      win_64_go_variant_strnocgogo_variant_ver2.2.0:
-        CONFIG: win_64_go_variant_strnocgogo_variant_ver2.2.0
+      win_64_GOARCHamd64cross_target_platformwin-64go_variant_strnocgogo_variant_ver2.2.0:
+        CONFIG: win_64_GOARCHamd64cross_target_platformwin-64go_variant_strnocgogo_variant_ver2.2.0
+        UPLOAD_PACKAGES: 'True'
+        build_workspace_dir: D:\\bld\\
+        free_disk_space: skip
+        pagefile_size: 0
+        resize_partitions: false
+        store_build_artifacts: false
+        tools_install_dir: D:\Miniforge
+      win_64_GOARCHarm64cross_target_platformwin-arm64go_variant_strnocgogo_variant_ver2.2.0:
+        CONFIG: win_64_GOARCHarm64cross_target_platformwin-arm64go_variant_strnocgogo_variant_ver2.2.0
         UPLOAD_PACKAGES: 'True'
         build_workspace_dir: D:\\bld\\
         free_disk_space: skip
