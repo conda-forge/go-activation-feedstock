@@ -9,3 +9,5 @@ for %%F in (activate deactivate) do (
   if errorlevel 1 exit 1
 )
 
+>> "%PREFIX%\etc\conda\activate.d\activate-z61-%PKG_NAME%.bat" echo set "GOOS=%GOOS%"
+>> "%PREFIX%\etc\conda\activate.d\activate-z61-%PKG_NAME%.bat" echo set "GOARCH=%GOARCH%"

@@ -14,7 +14,8 @@ source:
   sha256: 495be4bc87176ac567392e5b4116abd98466d33d7b49d41e764ccc6976b2dc42
 
 build:
-  number: 0
+  number: 1
+  skip: true  # [go_variant_str == "cgo" and cross_target_platform == "win-arm64"]
   run_exports:   # [cross_target_platform == "osx-64"]
     strong_constrains:   # [cross_target_platform == "osx-64"]
       - __osx>=10.12    # [cross_target_platform == "osx-64"]
