@@ -142,6 +142,29 @@ Futhermore, this package set the correct GOARCH and GOOS
 environment variables to enable cross-compilation.
 
 
+About go-nocgo_linux-riscv64
+----------------------------
+
+Home: http://golang.org
+
+Package license: BSD-3-Clause
+
+Summary: The Go (nocgo) compiler activation scripts for conda-build.
+
+Development: https://go.googlesource.com/go
+
+Documentation: https://golang.org/doc
+
+This package enables the CONDA_GO_COMPILER environment variable.
+This variable is used by conda-forge's patched GoLang compiler to
+set conda-aware GOBIN and GOPATH default values. These default
+values are ignored if GOBIN and GOPATH environment variables
+are set independently by the user.
+
+Futhermore, this package set the correct GOARCH and GOOS
+environment variables to enable cross-compilation.
+
+
 About go-nocgo_win-64
 ---------------------
 
@@ -256,12 +279,14 @@ Current release info
 | [![Conda Recipe](https://img.shields.io/badge/recipe-go--cgo__linux--64-green.svg)](https://anaconda.org/conda-forge/go-cgo_linux-64) | [![Conda Downloads](https://img.shields.io/conda/dn/conda-forge/go-cgo_linux-64.svg)](https://anaconda.org/conda-forge/go-cgo_linux-64) | [![Conda Version](https://img.shields.io/conda/vn/conda-forge/go-cgo_linux-64.svg)](https://anaconda.org/conda-forge/go-cgo_linux-64) | [![Conda Platforms](https://img.shields.io/conda/pn/conda-forge/go-cgo_linux-64.svg)](https://anaconda.org/conda-forge/go-cgo_linux-64) |
 | [![Conda Recipe](https://img.shields.io/badge/recipe-go--cgo__linux--aarch64-green.svg)](https://anaconda.org/conda-forge/go-cgo_linux-aarch64) | [![Conda Downloads](https://img.shields.io/conda/dn/conda-forge/go-cgo_linux-aarch64.svg)](https://anaconda.org/conda-forge/go-cgo_linux-aarch64) | [![Conda Version](https://img.shields.io/conda/vn/conda-forge/go-cgo_linux-aarch64.svg)](https://anaconda.org/conda-forge/go-cgo_linux-aarch64) | [![Conda Platforms](https://img.shields.io/conda/pn/conda-forge/go-cgo_linux-aarch64.svg)](https://anaconda.org/conda-forge/go-cgo_linux-aarch64) |
 | [![Conda Recipe](https://img.shields.io/badge/recipe-go--cgo__linux--ppc64le-green.svg)](https://anaconda.org/conda-forge/go-cgo_linux-ppc64le) | [![Conda Downloads](https://img.shields.io/conda/dn/conda-forge/go-cgo_linux-ppc64le.svg)](https://anaconda.org/conda-forge/go-cgo_linux-ppc64le) | [![Conda Version](https://img.shields.io/conda/vn/conda-forge/go-cgo_linux-ppc64le.svg)](https://anaconda.org/conda-forge/go-cgo_linux-ppc64le) | [![Conda Platforms](https://img.shields.io/conda/pn/conda-forge/go-cgo_linux-ppc64le.svg)](https://anaconda.org/conda-forge/go-cgo_linux-ppc64le) |
+| [![Conda Recipe](https://img.shields.io/badge/recipe-go--cgo__linux--riscv64-green.svg)](https://anaconda.org/conda-forge/go-cgo_linux-riscv64) | [![Conda Downloads](https://img.shields.io/conda/dn/conda-forge/go-cgo_linux-riscv64.svg)](https://anaconda.org/conda-forge/go-cgo_linux-riscv64) | [![Conda Version](https://img.shields.io/conda/vn/conda-forge/go-cgo_linux-riscv64.svg)](https://anaconda.org/conda-forge/go-cgo_linux-riscv64) | [![Conda Platforms](https://img.shields.io/conda/pn/conda-forge/go-cgo_linux-riscv64.svg)](https://anaconda.org/conda-forge/go-cgo_linux-riscv64) |
 | [![Conda Recipe](https://img.shields.io/badge/recipe-go--cgo__osx--64-green.svg)](https://anaconda.org/conda-forge/go-cgo_osx-64) | [![Conda Downloads](https://img.shields.io/conda/dn/conda-forge/go-cgo_osx-64.svg)](https://anaconda.org/conda-forge/go-cgo_osx-64) | [![Conda Version](https://img.shields.io/conda/vn/conda-forge/go-cgo_osx-64.svg)](https://anaconda.org/conda-forge/go-cgo_osx-64) | [![Conda Platforms](https://img.shields.io/conda/pn/conda-forge/go-cgo_osx-64.svg)](https://anaconda.org/conda-forge/go-cgo_osx-64) |
 | [![Conda Recipe](https://img.shields.io/badge/recipe-go--cgo__osx--arm64-green.svg)](https://anaconda.org/conda-forge/go-cgo_osx-arm64) | [![Conda Downloads](https://img.shields.io/conda/dn/conda-forge/go-cgo_osx-arm64.svg)](https://anaconda.org/conda-forge/go-cgo_osx-arm64) | [![Conda Version](https://img.shields.io/conda/vn/conda-forge/go-cgo_osx-arm64.svg)](https://anaconda.org/conda-forge/go-cgo_osx-arm64) | [![Conda Platforms](https://img.shields.io/conda/pn/conda-forge/go-cgo_osx-arm64.svg)](https://anaconda.org/conda-forge/go-cgo_osx-arm64) |
 | [![Conda Recipe](https://img.shields.io/badge/recipe-go--cgo__win--64-green.svg)](https://anaconda.org/conda-forge/go-cgo_win-64) | [![Conda Downloads](https://img.shields.io/conda/dn/conda-forge/go-cgo_win-64.svg)](https://anaconda.org/conda-forge/go-cgo_win-64) | [![Conda Version](https://img.shields.io/conda/vn/conda-forge/go-cgo_win-64.svg)](https://anaconda.org/conda-forge/go-cgo_win-64) | [![Conda Platforms](https://img.shields.io/conda/pn/conda-forge/go-cgo_win-64.svg)](https://anaconda.org/conda-forge/go-cgo_win-64) |
 | [![Conda Recipe](https://img.shields.io/badge/recipe-go--nocgo__linux--64-green.svg)](https://anaconda.org/conda-forge/go-nocgo_linux-64) | [![Conda Downloads](https://img.shields.io/conda/dn/conda-forge/go-nocgo_linux-64.svg)](https://anaconda.org/conda-forge/go-nocgo_linux-64) | [![Conda Version](https://img.shields.io/conda/vn/conda-forge/go-nocgo_linux-64.svg)](https://anaconda.org/conda-forge/go-nocgo_linux-64) | [![Conda Platforms](https://img.shields.io/conda/pn/conda-forge/go-nocgo_linux-64.svg)](https://anaconda.org/conda-forge/go-nocgo_linux-64) |
 | [![Conda Recipe](https://img.shields.io/badge/recipe-go--nocgo__linux--aarch64-green.svg)](https://anaconda.org/conda-forge/go-nocgo_linux-aarch64) | [![Conda Downloads](https://img.shields.io/conda/dn/conda-forge/go-nocgo_linux-aarch64.svg)](https://anaconda.org/conda-forge/go-nocgo_linux-aarch64) | [![Conda Version](https://img.shields.io/conda/vn/conda-forge/go-nocgo_linux-aarch64.svg)](https://anaconda.org/conda-forge/go-nocgo_linux-aarch64) | [![Conda Platforms](https://img.shields.io/conda/pn/conda-forge/go-nocgo_linux-aarch64.svg)](https://anaconda.org/conda-forge/go-nocgo_linux-aarch64) |
 | [![Conda Recipe](https://img.shields.io/badge/recipe-go--nocgo__linux--ppc64le-green.svg)](https://anaconda.org/conda-forge/go-nocgo_linux-ppc64le) | [![Conda Downloads](https://img.shields.io/conda/dn/conda-forge/go-nocgo_linux-ppc64le.svg)](https://anaconda.org/conda-forge/go-nocgo_linux-ppc64le) | [![Conda Version](https://img.shields.io/conda/vn/conda-forge/go-nocgo_linux-ppc64le.svg)](https://anaconda.org/conda-forge/go-nocgo_linux-ppc64le) | [![Conda Platforms](https://img.shields.io/conda/pn/conda-forge/go-nocgo_linux-ppc64le.svg)](https://anaconda.org/conda-forge/go-nocgo_linux-ppc64le) |
+| [![Conda Recipe](https://img.shields.io/badge/recipe-go--nocgo__linux--riscv64-green.svg)](https://anaconda.org/conda-forge/go-nocgo_linux-riscv64) | [![Conda Downloads](https://img.shields.io/conda/dn/conda-forge/go-nocgo_linux-riscv64.svg)](https://anaconda.org/conda-forge/go-nocgo_linux-riscv64) | [![Conda Version](https://img.shields.io/conda/vn/conda-forge/go-nocgo_linux-riscv64.svg)](https://anaconda.org/conda-forge/go-nocgo_linux-riscv64) | [![Conda Platforms](https://img.shields.io/conda/pn/conda-forge/go-nocgo_linux-riscv64.svg)](https://anaconda.org/conda-forge/go-nocgo_linux-riscv64) |
 | [![Conda Recipe](https://img.shields.io/badge/recipe-go--nocgo__osx--64-green.svg)](https://anaconda.org/conda-forge/go-nocgo_osx-64) | [![Conda Downloads](https://img.shields.io/conda/dn/conda-forge/go-nocgo_osx-64.svg)](https://anaconda.org/conda-forge/go-nocgo_osx-64) | [![Conda Version](https://img.shields.io/conda/vn/conda-forge/go-nocgo_osx-64.svg)](https://anaconda.org/conda-forge/go-nocgo_osx-64) | [![Conda Platforms](https://img.shields.io/conda/pn/conda-forge/go-nocgo_osx-64.svg)](https://anaconda.org/conda-forge/go-nocgo_osx-64) |
 | [![Conda Recipe](https://img.shields.io/badge/recipe-go--nocgo__osx--arm64-green.svg)](https://anaconda.org/conda-forge/go-nocgo_osx-arm64) | [![Conda Downloads](https://img.shields.io/conda/dn/conda-forge/go-nocgo_osx-arm64.svg)](https://anaconda.org/conda-forge/go-nocgo_osx-arm64) | [![Conda Version](https://img.shields.io/conda/vn/conda-forge/go-nocgo_osx-arm64.svg)](https://anaconda.org/conda-forge/go-nocgo_osx-arm64) | [![Conda Platforms](https://img.shields.io/conda/pn/conda-forge/go-nocgo_osx-arm64.svg)](https://anaconda.org/conda-forge/go-nocgo_osx-arm64) |
 | [![Conda Recipe](https://img.shields.io/badge/recipe-go--nocgo__win--64-green.svg)](https://anaconda.org/conda-forge/go-nocgo_win-64) | [![Conda Downloads](https://img.shields.io/conda/dn/conda-forge/go-nocgo_win-64.svg)](https://anaconda.org/conda-forge/go-nocgo_win-64) | [![Conda Version](https://img.shields.io/conda/vn/conda-forge/go-nocgo_win-64.svg)](https://anaconda.org/conda-forge/go-nocgo_win-64) | [![Conda Platforms](https://img.shields.io/conda/pn/conda-forge/go-nocgo_win-64.svg)](https://anaconda.org/conda-forge/go-nocgo_win-64) |
@@ -284,7 +309,7 @@ How to use
 <summary>With conda</summary>
 
 ```
-conda install go-cgo_linux-64 go-cgo_linux-aarch64 go-cgo_linux-ppc64le go-cgo_osx-64 go-cgo_osx-arm64 go-cgo_win-64 go-nocgo_linux-64 go-nocgo_linux-aarch64 go-nocgo_linux-ppc64le go-nocgo_osx-64 go-nocgo_osx-arm64 go-nocgo_win-64 go-nocgo_win-arm64
+conda install go-cgo_linux-64 go-cgo_linux-aarch64 go-cgo_linux-ppc64le go-cgo_linux-riscv64 go-cgo_osx-64 go-cgo_osx-arm64 go-cgo_win-64 go-nocgo_linux-64 go-nocgo_linux-aarch64 go-nocgo_linux-ppc64le go-nocgo_linux-riscv64 go-nocgo_osx-64 go-nocgo_osx-arm64 go-nocgo_win-64 go-nocgo_win-arm64
 ```
 
 </details>
@@ -293,7 +318,7 @@ conda install go-cgo_linux-64 go-cgo_linux-aarch64 go-cgo_linux-ppc64le go-cgo_o
 <summary>With mamba</summary>
 
 ```
-mamba install go-cgo_linux-64 go-cgo_linux-aarch64 go-cgo_linux-ppc64le go-cgo_osx-64 go-cgo_osx-arm64 go-cgo_win-64 go-nocgo_linux-64 go-nocgo_linux-aarch64 go-nocgo_linux-ppc64le go-nocgo_osx-64 go-nocgo_osx-arm64 go-nocgo_win-64 go-nocgo_win-arm64
+mamba install go-cgo_linux-64 go-cgo_linux-aarch64 go-cgo_linux-ppc64le go-cgo_linux-riscv64 go-cgo_osx-64 go-cgo_osx-arm64 go-cgo_win-64 go-nocgo_linux-64 go-nocgo_linux-aarch64 go-nocgo_linux-ppc64le go-nocgo_linux-riscv64 go-nocgo_osx-64 go-nocgo_osx-arm64 go-nocgo_win-64 go-nocgo_win-arm64
 ```
 
 </details>
@@ -303,9 +328,9 @@ mamba install go-cgo_linux-64 go-cgo_linux-aarch64 go-cgo_linux-ppc64le go-cgo_o
 
 ```
 # for adding to your local project
-pixi add go-cgo_linux-64 go-cgo_linux-aarch64 go-cgo_linux-ppc64le go-cgo_osx-64 go-cgo_osx-arm64 go-cgo_win-64 go-nocgo_linux-64 go-nocgo_linux-aarch64 go-nocgo_linux-ppc64le go-nocgo_osx-64 go-nocgo_osx-arm64 go-nocgo_win-64 go-nocgo_win-arm64
+pixi add go-cgo_linux-64 go-cgo_linux-aarch64 go-cgo_linux-ppc64le go-cgo_linux-riscv64 go-cgo_osx-64 go-cgo_osx-arm64 go-cgo_win-64 go-nocgo_linux-64 go-nocgo_linux-aarch64 go-nocgo_linux-ppc64le go-nocgo_linux-riscv64 go-nocgo_osx-64 go-nocgo_osx-arm64 go-nocgo_win-64 go-nocgo_win-arm64
 # for installing globally
-pixi global install go-cgo_linux-64 go-cgo_linux-aarch64 go-cgo_linux-ppc64le go-cgo_osx-64 go-cgo_osx-arm64 go-cgo_win-64 go-nocgo_linux-64 go-nocgo_linux-aarch64 go-nocgo_linux-ppc64le go-nocgo_osx-64 go-nocgo_osx-arm64 go-nocgo_win-64 go-nocgo_win-arm64
+pixi global install go-cgo_linux-64 go-cgo_linux-aarch64 go-cgo_linux-ppc64le go-cgo_linux-riscv64 go-cgo_osx-64 go-cgo_osx-arm64 go-cgo_win-64 go-nocgo_linux-64 go-nocgo_linux-aarch64 go-nocgo_linux-ppc64le go-nocgo_linux-riscv64 go-nocgo_osx-64 go-nocgo_osx-arm64 go-nocgo_win-64 go-nocgo_win-arm64
 ```
 
 </details>
