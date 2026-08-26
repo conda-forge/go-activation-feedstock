@@ -19,4 +19,11 @@ if [[ "${go_variant_str}" == "cgo" ]]; then
   sed -ie "s/\${CGO_ENABLED}/1/" "${ACTIVATE_SH}"
 else
   sed -ie "s/\${CGO_ENABLED}/0/" "${ACTIVATE_SH}"
+
+  # Go cannot internally link PIE for linux/riscv64, so -buildmode=pie there
+  # requires external (cgo) linking, which is unavailable with CGO_ENABLED=0.
+  # Every other nocgo target supports internal PIE linking and keeps it.
+  if [[ "${GOARCH}" == "riscv64" ]]; then
+    sed -ie "s/ -buildmode=pie//" "${ACTIVATE_SH}"
+  fi
 fi
