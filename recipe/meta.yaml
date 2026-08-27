@@ -33,6 +33,12 @@ requirements:
 test:
   files:
     - hello_world.go
+  requires:
+    # linux/riscv64 has no internal PIE linking, so -buildmode=pie falls back to
+    # external linking and needs a real cross compiler to provide $CC. This is
+    # named explicitly rather than via compiler('c'), which would resolve against
+    # target_platform (the build platform) instead of cross_target_platform.
+    - gcc_linux-riscv64  # [go_variant_str == "cgo" and cross_target_platform == "linux-riscv64"]
 
 about:
   home: http://golang.org
