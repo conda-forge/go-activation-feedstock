@@ -7,7 +7,7 @@ Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/go-activation-f
 About go-activation
 -------------------
 
-Home: http://golang.org
+Home: https://golang.org/
 
 Package license: BSD-3-Clause
 
@@ -26,11 +26,10 @@ are set independently by the user.
 Futhermore, this package set the correct GOARCH and GOOS
 environment variables to enable cross-compilation.
 
-
 About go-nocgo_osx-64
 ---------------------
 
-Home: http://golang.org
+Home: https://golang.org/
 
 Package license: BSD-3-Clause
 
@@ -48,12 +47,11 @@ are set independently by the user.
 
 Futhermore, this package set the correct GOARCH and GOOS
 environment variables to enable cross-compilation.
-
 
 About go-nocgo_osx-arm64
 ------------------------
 
-Home: http://golang.org
+Home: https://golang.org/
 
 Package license: BSD-3-Clause
 
@@ -71,12 +69,11 @@ are set independently by the user.
 
 Futhermore, this package set the correct GOARCH and GOOS
 environment variables to enable cross-compilation.
-
 
 About go-nocgo_linux-64
 -----------------------
 
-Home: http://golang.org
+Home: https://golang.org/
 
 Package license: BSD-3-Clause
 
@@ -94,12 +91,11 @@ are set independently by the user.
 
 Futhermore, this package set the correct GOARCH and GOOS
 environment variables to enable cross-compilation.
-
 
 About go-nocgo_linux-aarch64
 ----------------------------
 
-Home: http://golang.org
+Home: https://golang.org/
 
 Package license: BSD-3-Clause
 
@@ -117,12 +113,11 @@ are set independently by the user.
 
 Futhermore, this package set the correct GOARCH and GOOS
 environment variables to enable cross-compilation.
-
 
 About go-nocgo_linux-ppc64le
 ----------------------------
 
-Home: http://golang.org
+Home: https://golang.org/
 
 Package license: BSD-3-Clause
 
@@ -140,12 +135,11 @@ are set independently by the user.
 
 Futhermore, this package set the correct GOARCH and GOOS
 environment variables to enable cross-compilation.
-
 
 About go-nocgo_linux-riscv64
 ----------------------------
 
-Home: http://golang.org
+Home: https://golang.org/
 
 Package license: BSD-3-Clause
 
@@ -163,12 +157,11 @@ are set independently by the user.
 
 Futhermore, this package set the correct GOARCH and GOOS
 environment variables to enable cross-compilation.
-
 
 About go-nocgo_win-64
 ---------------------
 
-Home: http://golang.org
+Home: https://golang.org/
 
 Package license: BSD-3-Clause
 
@@ -186,12 +179,11 @@ are set independently by the user.
 
 Futhermore, this package set the correct GOARCH and GOOS
 environment variables to enable cross-compilation.
-
 
 About go-nocgo_win-arm64
 ------------------------
 
-Home: http://golang.org
+Home: https://golang.org/
 
 Package license: BSD-3-Clause
 
@@ -209,7 +201,6 @@ are set independently by the user.
 
 Futhermore, this package set the correct GOARCH and GOOS
 environment variables to enable cross-compilation.
-
 
 Current build status
 ====================
