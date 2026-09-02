@@ -3,8 +3,8 @@ cross_target_platform:
   - linux-aarch64                       # [linux]
   - linux-ppc64le                       # [linux]
   - linux-riscv64                       # [linux]
-  - osx-64                              # [linux or (osx and x86_64) or (osx and arm64)]
-  - osx-arm64                           # [linux or (osx and x86_64) or (osx and arm64)]
+  - osx-64                              # [unix]
+  - osx-arm64                           # [unix]
   - win-64                              # [linux64 or win]
   - win-arm64                           # [linux64 or win]
 GOOS:
@@ -12,8 +12,8 @@ GOOS:
   - linux                               # [linux]
   - linux                               # [linux]
   - linux                               # [linux]
-  - darwin                              # [linux or (osx and x86_64) or (osx and arm64)]
-  - darwin                              # [linux or (osx and x86_64) or (osx and arm64)]
+  - darwin                              # [unix]
+  - darwin                              # [unix]
   - windows                             # [linux64 or win]
   - windows                             # [linux64 or win]
 GOARCH:
@@ -21,8 +21,8 @@ GOARCH:
   - arm64                               # [linux]
   - ppc64le                             # [linux]
   - riscv64                             # [linux]
-  - amd64                               # [linux or (osx and x86_64) or (osx and arm64)]
-  - arm64                               # [linux or (osx and x86_64) or (osx and arm64)]
+  - amd64                               # [unix]
+  - arm64                               # [unix]
   - amd64                               # [linux64 or win]
   - arm64                               # [linux64 or win]
 go_variant_str:
