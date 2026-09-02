@@ -1,0 +1,80 @@
+context:
+  version: "1.26.6"
+
+package:
+  name: go-${{ go_variant_str }}_${{ cross_target_platform }}
+  version: ${{ version }}
+
+source:
+  # Add a source we don't need so that the bot issues PRs here automatically.
+  url: https://dl.google.com/go/go${{ version }}.src.tar.gz
+  sha256: a0721c54c688901448d77ad9b3ec7ea7c474730755ff891382e92ecb93ff2cb1
+
+build:
+  number: 1
+  skip:
+    - go_variant_str == "cgo" and cross_target_platform == "win-arm64"
+  script:
+    file: ${{ "build.sh" if unix else "build.bat" }}
+    # The [de]activate scripts are templates; everything that depends on the
+    # variant is computed here and substituted while installing them.
+    env:
+      GOOS: ${{ GOOS }}
+      GOARCH: ${{ GOARCH }}
+      CGO_ENABLED: ${{ "1" if go_variant_str == "cgo" else "0" }}
+      # Go cannot internally link PIE for linux/riscv64, so -buildmode=pie there
+      # requires external (cgo) linking, which is unavailable with CGO_ENABLED=0.
+      # Every other nocgo target supports internal PIE linking and keeps it.
+      GOFLAGS: ${{ "-modcacherw -trimpath" if go_variant_str == "nocgo" and GOARCH == "riscv64" else "-modcacherw -buildmode=pie -trimpath" }}
+
+requirements:
+  run:
+    - go ${{ version }}.*
+    - _go_select ==${{ go_variant_ver }} ${{ go_variant_str }}
+  run_exports:
+    strong:
+      - if: cross_target_platform == "linux-64" and go_variant_str == "cgo"
+        then: __glibc >=2.17
+    strong_constraints:
+      - if: cross_target_platform == "osx-64"
+        then: __osx >=10.12
+
+tests:
+  - script:
+      file: ${{ "run_test.sh" if unix else "run_test.bat" }}
+      env:
+        build_platform: ${{ build_platform }}
+        cross_target_platform: ${{ cross_target_platform }}
+    files:
+      recipe:
+        - hello_world.go
+    requirements:
+      run:
+        # linux/riscv64 has no internal PIE linking, so -buildmode=pie falls back to
+        # external linking and needs a real cross compiler to provide $CC. This is
+        # named explicitly rather than via compiler('c'), which would resolve against
+        # target_platform (the build platform) instead of cross_target_platform.
+        - if: go_variant_str == "cgo" and cross_target_platform == "linux-riscv64"
+          then: gcc_linux-riscv64
+
+about:
+  homepage: https://golang.org
+  license: BSD-3-Clause
+  license_file: LICENSE.txt
+  summary: The Go (${{ go_variant_str }}) compiler activation scripts for conda-build.
+  description: |
+    This package enables the CONDA_GO_COMPILER environment variable.
+    This variable is used by conda-forge's patched GoLang compiler to
+    set conda-aware GOBIN and GOPATH default values. These default
+    values are ignored if GOBIN and GOPATH environment variables
+    are set independently by the user.
+
+    Futhermore, this package set the correct GOARCH and GOOS
+    environment variables to enable cross-compilation.
+  documentation: https://golang.org/doc
+  repository: https://go.googlesource.com/go
+
+extra:
+  feedstock-name: go-activation
+  recipe-maintainers:
+    - conda-forge/go
