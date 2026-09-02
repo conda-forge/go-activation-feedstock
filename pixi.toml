@@ -388,6 +388,114 @@ description = "Debug go-activation-feedstock with variant linux_ppc64le_GOARCHri
 [feature.build.tasks."inspect-linux_ppc64le_GOARCHriscv64GOOSlinuxcross_target_platformlinux-riscv64go_variant_strnocgogo_variant_ver2.2.0"]
 cmd = "inspect_artifacts --recipe-dir recipe -m .ci_support/linux_ppc64le_GOARCHriscv64GOOSlinuxcross_target_platformlinux-riscv64go_variant_strnocgogo_variant_ver2.2.0.yaml"
 description = "List contents of go-activation-feedstock packages built for variant linux_ppc64le_GOARCHriscv64GOOSlinuxcross_target_platformlinux-riscv64go_variant_strnocgogo_variant_ver2.2.0"
+[feature.build.tasks."build-linux_riscv64_GOARCHamd64GOOSdarwincross_target_platformosx-64go_variant_strcgogo_variant_ver2.3.0"]
+cmd = "rattler-build build --recipe recipe -m .ci_support/linux_riscv64_GOARCHamd64GOOSdarwincross_target_platformosx-64go_variant_strcgogo_variant_ver2.3.0.yaml --target-platform linux-riscv64"
+description = "Build go-activation-feedstock with variant linux_riscv64_GOARCHamd64GOOSdarwincross_target_platformosx-64go_variant_strcgogo_variant_ver2.3.0 directly (without setup scripts)"
+[feature.build.tasks."debug-linux_riscv64_GOARCHamd64GOOSdarwincross_target_platformosx-64go_variant_strcgogo_variant_ver2.3.0"]
+cmd = "rattler-build debug setup --recipe recipe -m .ci_support/linux_riscv64_GOARCHamd64GOOSdarwincross_target_platformosx-64go_variant_strcgogo_variant_ver2.3.0.yaml --target-platform linux-riscv64"
+description = "Debug go-activation-feedstock with variant linux_riscv64_GOARCHamd64GOOSdarwincross_target_platformosx-64go_variant_strcgogo_variant_ver2.3.0 directly (without setup scripts)"
+[feature.build.tasks."inspect-linux_riscv64_GOARCHamd64GOOSdarwincross_target_platformosx-64go_variant_strcgogo_variant_ver2.3.0"]
+cmd = "inspect_artifacts --recipe-dir recipe -m .ci_support/linux_riscv64_GOARCHamd64GOOSdarwincross_target_platformosx-64go_variant_strcgogo_variant_ver2.3.0.yaml"
+description = "List contents of go-activation-feedstock packages built for variant linux_riscv64_GOARCHamd64GOOSdarwincross_target_platformosx-64go_variant_strcgogo_variant_ver2.3.0"
+[feature.build.tasks."build-linux_riscv64_GOARCHamd64GOOSdarwincross_target_platformosx-64go_variant_strnocgogo_variant_ver2.2.0"]
+cmd = "rattler-build build --recipe recipe -m .ci_support/linux_riscv64_GOARCHamd64GOOSdarwincross_target_platformosx-64go_variant_strnocgogo_variant_ver2.2.0.yaml --target-platform linux-riscv64"
+description = "Build go-activation-feedstock with variant linux_riscv64_GOARCHamd64GOOSdarwincross_target_platformosx-64go_variant_strnocgogo_variant_ver2.2.0 directly (without setup scripts)"
+[feature.build.tasks."debug-linux_riscv64_GOARCHamd64GOOSdarwincross_target_platformosx-64go_variant_strnocgogo_variant_ver2.2.0"]
+cmd = "rattler-build debug setup --recipe recipe -m .ci_support/linux_riscv64_GOARCHamd64GOOSdarwincross_target_platformosx-64go_variant_strnocgogo_variant_ver2.2.0.yaml --target-platform linux-riscv64"
+description = "Debug go-activation-feedstock with variant linux_riscv64_GOARCHamd64GOOSdarwincross_target_platformosx-64go_variant_strnocgogo_variant_ver2.2.0 directly (without setup scripts)"
+[feature.build.tasks."inspect-linux_riscv64_GOARCHamd64GOOSdarwincross_target_platformosx-64go_variant_strnocgogo_variant_ver2.2.0"]
+cmd = "inspect_artifacts --recipe-dir recipe -m .ci_support/linux_riscv64_GOARCHamd64GOOSdarwincross_target_platformosx-64go_variant_strnocgogo_variant_ver2.2.0.yaml"
+description = "List contents of go-activation-feedstock packages built for variant linux_riscv64_GOARCHamd64GOOSdarwincross_target_platformosx-64go_variant_strnocgogo_variant_ver2.2.0"
+[feature.build.tasks."build-linux_riscv64_GOARCHamd64GOOSlinuxcross_target_platformlinux-64go_variant_strcgogo_variant_ver2.3.0"]
+cmd = "rattler-build build --recipe recipe -m .ci_support/linux_riscv64_GOARCHamd64GOOSlinuxcross_target_platformlinux-64go_variant_strcgogo_variant_ver2.3.0.yaml --target-platform linux-riscv64"
+description = "Build go-activation-feedstock with variant linux_riscv64_GOARCHamd64GOOSlinuxcross_target_platformlinux-64go_variant_strcgogo_variant_ver2.3.0 directly (without setup scripts)"
+[feature.build.tasks."debug-linux_riscv64_GOARCHamd64GOOSlinuxcross_target_platformlinux-64go_variant_strcgogo_variant_ver2.3.0"]
+cmd = "rattler-build debug setup --recipe recipe -m .ci_support/linux_riscv64_GOARCHamd64GOOSlinuxcross_target_platformlinux-64go_variant_strcgogo_variant_ver2.3.0.yaml --target-platform linux-riscv64"
+description = "Debug go-activation-feedstock with variant linux_riscv64_GOARCHamd64GOOSlinuxcross_target_platformlinux-64go_variant_strcgogo_variant_ver2.3.0 directly (without setup scripts)"
+[feature.build.tasks."inspect-linux_riscv64_GOARCHamd64GOOSlinuxcross_target_platformlinux-64go_variant_strcgogo_variant_ver2.3.0"]
+cmd = "inspect_artifacts --recipe-dir recipe -m .ci_support/linux_riscv64_GOARCHamd64GOOSlinuxcross_target_platformlinux-64go_variant_strcgogo_variant_ver2.3.0.yaml"
+description = "List contents of go-activation-feedstock packages built for variant linux_riscv64_GOARCHamd64GOOSlinuxcross_target_platformlinux-64go_variant_strcgogo_variant_ver2.3.0"
+[feature.build.tasks."build-linux_riscv64_GOARCHamd64GOOSlinuxcross_target_platformlinux-64go_variant_strnocgogo_variant_ver2.2.0"]
+cmd = "rattler-build build --recipe recipe -m .ci_support/linux_riscv64_GOARCHamd64GOOSlinuxcross_target_platformlinux-64go_variant_strnocgogo_variant_ver2.2.0.yaml --target-platform linux-riscv64"
+description = "Build go-activation-feedstock with variant linux_riscv64_GOARCHamd64GOOSlinuxcross_target_platformlinux-64go_variant_strnocgogo_variant_ver2.2.0 directly (without setup scripts)"
+[feature.build.tasks."debug-linux_riscv64_GOARCHamd64GOOSlinuxcross_target_platformlinux-64go_variant_strnocgogo_variant_ver2.2.0"]
+cmd = "rattler-build debug setup --recipe recipe -m .ci_support/linux_riscv64_GOARCHamd64GOOSlinuxcross_target_platformlinux-64go_variant_strnocgogo_variant_ver2.2.0.yaml --target-platform linux-riscv64"
+description = "Debug go-activation-feedstock with variant linux_riscv64_GOARCHamd64GOOSlinuxcross_target_platformlinux-64go_variant_strnocgogo_variant_ver2.2.0 directly (without setup scripts)"
+[feature.build.tasks."inspect-linux_riscv64_GOARCHamd64GOOSlinuxcross_target_platformlinux-64go_variant_strnocgogo_variant_ver2.2.0"]
+cmd = "inspect_artifacts --recipe-dir recipe -m .ci_support/linux_riscv64_GOARCHamd64GOOSlinuxcross_target_platformlinux-64go_variant_strnocgogo_variant_ver2.2.0.yaml"
+description = "List contents of go-activation-feedstock packages built for variant linux_riscv64_GOARCHamd64GOOSlinuxcross_target_platformlinux-64go_variant_strnocgogo_variant_ver2.2.0"
+[feature.build.tasks."build-linux_riscv64_GOARCHarm64GOOSdarwincross_target_platformosx-arm64go_variant_strcgogo_variant_ver2.3.0"]
+cmd = "rattler-build build --recipe recipe -m .ci_support/linux_riscv64_GOARCHarm64GOOSdarwincross_target_platformosx-arm64go_variant_strcgogo_variant_ver2.3.0.yaml --target-platform linux-riscv64"
+description = "Build go-activation-feedstock with variant linux_riscv64_GOARCHarm64GOOSdarwincross_target_platformosx-arm64go_variant_strcgogo_variant_ver2.3.0 directly (without setup scripts)"
+[feature.build.tasks."debug-linux_riscv64_GOARCHarm64GOOSdarwincross_target_platformosx-arm64go_variant_strcgogo_variant_ver2.3.0"]
+cmd = "rattler-build debug setup --recipe recipe -m .ci_support/linux_riscv64_GOARCHarm64GOOSdarwincross_target_platformosx-arm64go_variant_strcgogo_variant_ver2.3.0.yaml --target-platform linux-riscv64"
+description = "Debug go-activation-feedstock with variant linux_riscv64_GOARCHarm64GOOSdarwincross_target_platformosx-arm64go_variant_strcgogo_variant_ver2.3.0 directly (without setup scripts)"
+[feature.build.tasks."inspect-linux_riscv64_GOARCHarm64GOOSdarwincross_target_platformosx-arm64go_variant_strcgogo_variant_ver2.3.0"]
+cmd = "inspect_artifacts --recipe-dir recipe -m .ci_support/linux_riscv64_GOARCHarm64GOOSdarwincross_target_platformosx-arm64go_variant_strcgogo_variant_ver2.3.0.yaml"
+description = "List contents of go-activation-feedstock packages built for variant linux_riscv64_GOARCHarm64GOOSdarwincross_target_platformosx-arm64go_variant_strcgogo_variant_ver2.3.0"
+[feature.build.tasks."build-linux_riscv64_GOARCHarm64GOOSdarwincross_target_platformosx-arm64go_variant_strnocgogo_variant_ver2.2.0"]
+cmd = "rattler-build build --recipe recipe -m .ci_support/linux_riscv64_GOARCHarm64GOOSdarwincross_target_platformosx-arm64go_variant_strnocgogo_variant_ver2.2.0.yaml --target-platform linux-riscv64"
+description = "Build go-activation-feedstock with variant linux_riscv64_GOARCHarm64GOOSdarwincross_target_platformosx-arm64go_variant_strnocgogo_variant_ver2.2.0 directly (without setup scripts)"
+[feature.build.tasks."debug-linux_riscv64_GOARCHarm64GOOSdarwincross_target_platformosx-arm64go_variant_strnocgogo_variant_ver2.2.0"]
+cmd = "rattler-build debug setup --recipe recipe -m .ci_support/linux_riscv64_GOARCHarm64GOOSdarwincross_target_platformosx-arm64go_variant_strnocgogo_variant_ver2.2.0.yaml --target-platform linux-riscv64"
+description = "Debug go-activation-feedstock with variant linux_riscv64_GOARCHarm64GOOSdarwincross_target_platformosx-arm64go_variant_strnocgogo_variant_ver2.2.0 directly (without setup scripts)"
+[feature.build.tasks."inspect-linux_riscv64_GOARCHarm64GOOSdarwincross_target_platformosx-arm64go_variant_strnocgogo_variant_ver2.2.0"]
+cmd = "inspect_artifacts --recipe-dir recipe -m .ci_support/linux_riscv64_GOARCHarm64GOOSdarwincross_target_platformosx-arm64go_variant_strnocgogo_variant_ver2.2.0.yaml"
+description = "List contents of go-activation-feedstock packages built for variant linux_riscv64_GOARCHarm64GOOSdarwincross_target_platformosx-arm64go_variant_strnocgogo_variant_ver2.2.0"
+[feature.build.tasks."build-linux_riscv64_GOARCHarm64GOOSlinuxcross_target_platformlinux-aarch64go_variant_strcgogo_variant_ver2.3.0"]
+cmd = "rattler-build build --recipe recipe -m .ci_support/linux_riscv64_GOARCHarm64GOOSlinuxcross_target_platformlinux-aarch64go_variant_strcgogo_variant_ver2.3.0.yaml --target-platform linux-riscv64"
+description = "Build go-activation-feedstock with variant linux_riscv64_GOARCHarm64GOOSlinuxcross_target_platformlinux-aarch64go_variant_strcgogo_variant_ver2.3.0 directly (without setup scripts)"
+[feature.build.tasks."debug-linux_riscv64_GOARCHarm64GOOSlinuxcross_target_platformlinux-aarch64go_variant_strcgogo_variant_ver2.3.0"]
+cmd = "rattler-build debug setup --recipe recipe -m .ci_support/linux_riscv64_GOARCHarm64GOOSlinuxcross_target_platformlinux-aarch64go_variant_strcgogo_variant_ver2.3.0.yaml --target-platform linux-riscv64"
+description = "Debug go-activation-feedstock with variant linux_riscv64_GOARCHarm64GOOSlinuxcross_target_platformlinux-aarch64go_variant_strcgogo_variant_ver2.3.0 directly (without setup scripts)"
+[feature.build.tasks."inspect-linux_riscv64_GOARCHarm64GOOSlinuxcross_target_platformlinux-aarch64go_variant_strcgogo_variant_ver2.3.0"]
+cmd = "inspect_artifacts --recipe-dir recipe -m .ci_support/linux_riscv64_GOARCHarm64GOOSlinuxcross_target_platformlinux-aarch64go_variant_strcgogo_variant_ver2.3.0.yaml"
+description = "List contents of go-activation-feedstock packages built for variant linux_riscv64_GOARCHarm64GOOSlinuxcross_target_platformlinux-aarch64go_variant_strcgogo_variant_ver2.3.0"
+[feature.build.tasks."build-linux_riscv64_GOARCHarm64GOOSlinuxcross_target_platformlinux-aarch64go_variant_strnocgogo_variant_ver2.2.0"]
+cmd = "rattler-build build --recipe recipe -m .ci_support/linux_riscv64_GOARCHarm64GOOSlinuxcross_target_platformlinux-aarch64go_variant_strnocgogo_variant_ver2.2.0.yaml --target-platform linux-riscv64"
+description = "Build go-activation-feedstock with variant linux_riscv64_GOARCHarm64GOOSlinuxcross_target_platformlinux-aarch64go_variant_strnocgogo_variant_ver2.2.0 directly (without setup scripts)"
+[feature.build.tasks."debug-linux_riscv64_GOARCHarm64GOOSlinuxcross_target_platformlinux-aarch64go_variant_strnocgogo_variant_ver2.2.0"]
+cmd = "rattler-build debug setup --recipe recipe -m .ci_support/linux_riscv64_GOARCHarm64GOOSlinuxcross_target_platformlinux-aarch64go_variant_strnocgogo_variant_ver2.2.0.yaml --target-platform linux-riscv64"
+description = "Debug go-activation-feedstock with variant linux_riscv64_GOARCHarm64GOOSlinuxcross_target_platformlinux-aarch64go_variant_strnocgogo_variant_ver2.2.0 directly (without setup scripts)"
+[feature.build.tasks."inspect-linux_riscv64_GOARCHarm64GOOSlinuxcross_target_platformlinux-aarch64go_variant_strnocgogo_variant_ver2.2.0"]
+cmd = "inspect_artifacts --recipe-dir recipe -m .ci_support/linux_riscv64_GOARCHarm64GOOSlinuxcross_target_platformlinux-aarch64go_variant_strnocgogo_variant_ver2.2.0.yaml"
+description = "List contents of go-activation-feedstock packages built for variant linux_riscv64_GOARCHarm64GOOSlinuxcross_target_platformlinux-aarch64go_variant_strnocgogo_variant_ver2.2.0"
+[feature.build.tasks."build-linux_riscv64_GOARCHppc64leGOOSlinuxcross_target_platformlinux-ppc64lego_variant_strcgogo_variant_ver2.3.0"]
+cmd = "rattler-build build --recipe recipe -m .ci_support/linux_riscv64_GOARCHppc64leGOOSlinuxcross_target_platformlinux-ppc64lego_variant_strcgogo_variant_ver2.3.0.yaml --target-platform linux-riscv64"
+description = "Build go-activation-feedstock with variant linux_riscv64_GOARCHppc64leGOOSlinuxcross_target_platformlinux-ppc64lego_variant_strcgogo_variant_ver2.3.0 directly (without setup scripts)"
+[feature.build.tasks."debug-linux_riscv64_GOARCHppc64leGOOSlinuxcross_target_platformlinux-ppc64lego_variant_strcgogo_variant_ver2.3.0"]
+cmd = "rattler-build debug setup --recipe recipe -m .ci_support/linux_riscv64_GOARCHppc64leGOOSlinuxcross_target_platformlinux-ppc64lego_variant_strcgogo_variant_ver2.3.0.yaml --target-platform linux-riscv64"
+description = "Debug go-activation-feedstock with variant linux_riscv64_GOARCHppc64leGOOSlinuxcross_target_platformlinux-ppc64lego_variant_strcgogo_variant_ver2.3.0 directly (without setup scripts)"
+[feature.build.tasks."inspect-linux_riscv64_GOARCHppc64leGOOSlinuxcross_target_platformlinux-ppc64lego_variant_strcgogo_variant_ver2.3.0"]
+cmd = "inspect_artifacts --recipe-dir recipe -m .ci_support/linux_riscv64_GOARCHppc64leGOOSlinuxcross_target_platformlinux-ppc64lego_variant_strcgogo_variant_ver2.3.0.yaml"
+description = "List contents of go-activation-feedstock packages built for variant linux_riscv64_GOARCHppc64leGOOSlinuxcross_target_platformlinux-ppc64lego_variant_strcgogo_variant_ver2.3.0"
+[feature.build.tasks."build-linux_riscv64_GOARCHppc64leGOOSlinuxcross_target_platformlinux-ppc64lego_variant_strnocgogo_variant_ver2.2.0"]
+cmd = "rattler-build build --recipe recipe -m .ci_support/linux_riscv64_GOARCHppc64leGOOSlinuxcross_target_platformlinux-ppc64lego_variant_strnocgogo_variant_ver2.2.0.yaml --target-platform linux-riscv64"
+description = "Build go-activation-feedstock with variant linux_riscv64_GOARCHppc64leGOOSlinuxcross_target_platformlinux-ppc64lego_variant_strnocgogo_variant_ver2.2.0 directly (without setup scripts)"
+[feature.build.tasks."debug-linux_riscv64_GOARCHppc64leGOOSlinuxcross_target_platformlinux-ppc64lego_variant_strnocgogo_variant_ver2.2.0"]
+cmd = "rattler-build debug setup --recipe recipe -m .ci_support/linux_riscv64_GOARCHppc64leGOOSlinuxcross_target_platformlinux-ppc64lego_variant_strnocgogo_variant_ver2.2.0.yaml --target-platform linux-riscv64"
+description = "Debug go-activation-feedstock with variant linux_riscv64_GOARCHppc64leGOOSlinuxcross_target_platformlinux-ppc64lego_variant_strnocgogo_variant_ver2.2.0 directly (without setup scripts)"
+[feature.build.tasks."inspect-linux_riscv64_GOARCHppc64leGOOSlinuxcross_target_platformlinux-ppc64lego_variant_strnocgogo_variant_ver2.2.0"]
+cmd = "inspect_artifacts --recipe-dir recipe -m .ci_support/linux_riscv64_GOARCHppc64leGOOSlinuxcross_target_platformlinux-ppc64lego_variant_strnocgogo_variant_ver2.2.0.yaml"
+description = "List contents of go-activation-feedstock packages built for variant linux_riscv64_GOARCHppc64leGOOSlinuxcross_target_platformlinux-ppc64lego_variant_strnocgogo_variant_ver2.2.0"
+[feature.build.tasks."build-linux_riscv64_GOARCHriscv64GOOSlinuxcross_target_platformlinux-riscv64go_variant_strcgogo_variant_ver2.3.0"]
+cmd = "rattler-build build --recipe recipe -m .ci_support/linux_riscv64_GOARCHriscv64GOOSlinuxcross_target_platformlinux-riscv64go_variant_strcgogo_variant_ver2.3.0.yaml --target-platform linux-riscv64"
+description = "Build go-activation-feedstock with variant linux_riscv64_GOARCHriscv64GOOSlinuxcross_target_platformlinux-riscv64go_variant_strcgogo_variant_ver2.3.0 directly (without setup scripts)"
+[feature.build.tasks."debug-linux_riscv64_GOARCHriscv64GOOSlinuxcross_target_platformlinux-riscv64go_variant_strcgogo_variant_ver2.3.0"]
+cmd = "rattler-build debug setup --recipe recipe -m .ci_support/linux_riscv64_GOARCHriscv64GOOSlinuxcross_target_platformlinux-riscv64go_variant_strcgogo_variant_ver2.3.0.yaml --target-platform linux-riscv64"
+description = "Debug go-activation-feedstock with variant linux_riscv64_GOARCHriscv64GOOSlinuxcross_target_platformlinux-riscv64go_variant_strcgogo_variant_ver2.3.0 directly (without setup scripts)"
+[feature.build.tasks."inspect-linux_riscv64_GOARCHriscv64GOOSlinuxcross_target_platformlinux-riscv64go_variant_strcgogo_variant_ver2.3.0"]
+cmd = "inspect_artifacts --recipe-dir recipe -m .ci_support/linux_riscv64_GOARCHriscv64GOOSlinuxcross_target_platformlinux-riscv64go_variant_strcgogo_variant_ver2.3.0.yaml"
+description = "List contents of go-activation-feedstock packages built for variant linux_riscv64_GOARCHriscv64GOOSlinuxcross_target_platformlinux-riscv64go_variant_strcgogo_variant_ver2.3.0"
+[feature.build.tasks."build-linux_riscv64_GOARCHriscv64GOOSlinuxcross_target_platformlinux-riscv64go_variant_strnocgogo_variant_ver2.2.0"]
+cmd = "rattler-build build --recipe recipe -m .ci_support/linux_riscv64_GOARCHriscv64GOOSlinuxcross_target_platformlinux-riscv64go_variant_strnocgogo_variant_ver2.2.0.yaml --target-platform linux-riscv64"
+description = "Build go-activation-feedstock with variant linux_riscv64_GOARCHriscv64GOOSlinuxcross_target_platformlinux-riscv64go_variant_strnocgogo_variant_ver2.2.0 directly (without setup scripts)"
+[feature.build.tasks."debug-linux_riscv64_GOARCHriscv64GOOSlinuxcross_target_platformlinux-riscv64go_variant_strnocgogo_variant_ver2.2.0"]
+cmd = "rattler-build debug setup --recipe recipe -m .ci_support/linux_riscv64_GOARCHriscv64GOOSlinuxcross_target_platformlinux-riscv64go_variant_strnocgogo_variant_ver2.2.0.yaml --target-platform linux-riscv64"
+description = "Debug go-activation-feedstock with variant linux_riscv64_GOARCHriscv64GOOSlinuxcross_target_platformlinux-riscv64go_variant_strnocgogo_variant_ver2.2.0 directly (without setup scripts)"
+[feature.build.tasks."inspect-linux_riscv64_GOARCHriscv64GOOSlinuxcross_target_platformlinux-riscv64go_variant_strnocgogo_variant_ver2.2.0"]
+cmd = "inspect_artifacts --recipe-dir recipe -m .ci_support/linux_riscv64_GOARCHriscv64GOOSlinuxcross_target_platformlinux-riscv64go_variant_strnocgogo_variant_ver2.2.0.yaml"
+description = "List contents of go-activation-feedstock packages built for variant linux_riscv64_GOARCHriscv64GOOSlinuxcross_target_platformlinux-riscv64go_variant_strnocgogo_variant_ver2.2.0"
 [feature.build.tasks."build-osx_64_GOARCHamd64cross_target_platformosx-64go_variant_strcgogo_variant_ver2.3.0"]
 cmd = "rattler-build build --recipe recipe -m .ci_support/osx_64_GOARCHamd64cross_target_platformosx-64go_variant_strcgogo_variant_ver2.3.0.yaml --target-platform osx-64"
 description = "Build go-activation-feedstock with variant osx_64_GOARCHamd64cross_target_platformosx-64go_variant_strcgogo_variant_ver2.3.0 directly (without setup scripts)"
