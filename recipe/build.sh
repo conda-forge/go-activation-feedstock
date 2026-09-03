@@ -2,17 +2,15 @@
 
 set -exuo pipefail
 
-# Install [de]activate scripts.
-mkdir -p "${PREFIX}/etc/conda/activate.d" "${PREFIX}/etc/conda/deactivate.d"
+mkdir -p "${PREFIX}/etc/conda/env_vars.d"
 
-# The activate script is a template, the variant dependent values are passed in
-# as environment variables by the recipe.
-sed -e "s|\${CGO_ENABLED}|${CGO_ENABLED}|" \
-    -e "s|\${GOOS}|${GOOS}|" \
-    -e "s|\${GOARCH}|${GOARCH}|" \
-    -e "s|\${GOFLAGS}|${GOFLAGS}|" \
-    "${RECIPE_DIR}/activate.sh" \
-    > "${PREFIX}/etc/conda/activate.d/activate-z61-${PKG_NAME}.sh"
-
-cp "${RECIPE_DIR}/deactivate.sh" \
-   "${PREFIX}/etc/conda/deactivate.d/deactivate-z61-${PKG_NAME}.sh"
+# The variant dependent values are passed in as environment variables by the recipe.
+cat >"${PREFIX}/etc/conda/env_vars.d/${PKG_NAME}.json" <<EOF
+{
+  "CGO_ENABLED": "${CGO_ENABLED}",
+  "CONDA_GO_COMPILER": "1",
+  "GOARCH": "${GOARCH}",
+  "GOFLAGS": "${GOFLAGS}",
+  "GOOS": "${GOOS}"
+}
+EOF
