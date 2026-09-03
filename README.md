@@ -302,6 +302,7 @@ Current release info
 | [![Conda Recipe](https://img.shields.io/badge/recipe-go--cgo__osx--64-green.svg)](https://anaconda.org/conda-forge/go-cgo_osx-64) | [![Conda Downloads](https://img.shields.io/conda/dn/conda-forge/go-cgo_osx-64.svg)](https://anaconda.org/conda-forge/go-cgo_osx-64) | [![Conda Version](https://img.shields.io/conda/vn/conda-forge/go-cgo_osx-64.svg)](https://anaconda.org/conda-forge/go-cgo_osx-64) | [![Conda Platforms](https://img.shields.io/conda/pn/conda-forge/go-cgo_osx-64.svg)](https://anaconda.org/conda-forge/go-cgo_osx-64) |
 | [![Conda Recipe](https://img.shields.io/badge/recipe-go--cgo__osx--arm64-green.svg)](https://anaconda.org/conda-forge/go-cgo_osx-arm64) | [![Conda Downloads](https://img.shields.io/conda/dn/conda-forge/go-cgo_osx-arm64.svg)](https://anaconda.org/conda-forge/go-cgo_osx-arm64) | [![Conda Version](https://img.shields.io/conda/vn/conda-forge/go-cgo_osx-arm64.svg)](https://anaconda.org/conda-forge/go-cgo_osx-arm64) | [![Conda Platforms](https://img.shields.io/conda/pn/conda-forge/go-cgo_osx-arm64.svg)](https://anaconda.org/conda-forge/go-cgo_osx-arm64) |
 | [![Conda Recipe](https://img.shields.io/badge/recipe-go--cgo__win--64-green.svg)](https://anaconda.org/conda-forge/go-cgo_win-64) | [![Conda Downloads](https://img.shields.io/conda/dn/conda-forge/go-cgo_win-64.svg)](https://anaconda.org/conda-forge/go-cgo_win-64) | [![Conda Version](https://img.shields.io/conda/vn/conda-forge/go-cgo_win-64.svg)](https://anaconda.org/conda-forge/go-cgo_win-64) | [![Conda Platforms](https://img.shields.io/conda/pn/conda-forge/go-cgo_win-64.svg)](https://anaconda.org/conda-forge/go-cgo_win-64) |
+| [![Conda Recipe](https://img.shields.io/badge/recipe-go--cgo__win--arm64-green.svg)](https://anaconda.org/conda-forge/go-cgo_win-arm64) | [![Conda Downloads](https://img.shields.io/conda/dn/conda-forge/go-cgo_win-arm64.svg)](https://anaconda.org/conda-forge/go-cgo_win-arm64) | [![Conda Version](https://img.shields.io/conda/vn/conda-forge/go-cgo_win-arm64.svg)](https://anaconda.org/conda-forge/go-cgo_win-arm64) | [![Conda Platforms](https://img.shields.io/conda/pn/conda-forge/go-cgo_win-arm64.svg)](https://anaconda.org/conda-forge/go-cgo_win-arm64) |
 | [![Conda Recipe](https://img.shields.io/badge/recipe-go--nocgo__linux--64-green.svg)](https://anaconda.org/conda-forge/go-nocgo_linux-64) | [![Conda Downloads](https://img.shields.io/conda/dn/conda-forge/go-nocgo_linux-64.svg)](https://anaconda.org/conda-forge/go-nocgo_linux-64) | [![Conda Version](https://img.shields.io/conda/vn/conda-forge/go-nocgo_linux-64.svg)](https://anaconda.org/conda-forge/go-nocgo_linux-64) | [![Conda Platforms](https://img.shields.io/conda/pn/conda-forge/go-nocgo_linux-64.svg)](https://anaconda.org/conda-forge/go-nocgo_linux-64) |
 | [![Conda Recipe](https://img.shields.io/badge/recipe-go--nocgo__linux--aarch64-green.svg)](https://anaconda.org/conda-forge/go-nocgo_linux-aarch64) | [![Conda Downloads](https://img.shields.io/conda/dn/conda-forge/go-nocgo_linux-aarch64.svg)](https://anaconda.org/conda-forge/go-nocgo_linux-aarch64) | [![Conda Version](https://img.shields.io/conda/vn/conda-forge/go-nocgo_linux-aarch64.svg)](https://anaconda.org/conda-forge/go-nocgo_linux-aarch64) | [![Conda Platforms](https://img.shields.io/conda/pn/conda-forge/go-nocgo_linux-aarch64.svg)](https://anaconda.org/conda-forge/go-nocgo_linux-aarch64) |
 | [![Conda Recipe](https://img.shields.io/badge/recipe-go--nocgo__linux--ppc64le-green.svg)](https://anaconda.org/conda-forge/go-nocgo_linux-ppc64le) | [![Conda Downloads](https://img.shields.io/conda/dn/conda-forge/go-nocgo_linux-ppc64le.svg)](https://anaconda.org/conda-forge/go-nocgo_linux-ppc64le) | [![Conda Version](https://img.shields.io/conda/vn/conda-forge/go-nocgo_linux-ppc64le.svg)](https://anaconda.org/conda-forge/go-nocgo_linux-ppc64le) | [![Conda Platforms](https://img.shields.io/conda/pn/conda-forge/go-nocgo_linux-ppc64le.svg)](https://anaconda.org/conda-forge/go-nocgo_linux-ppc64le) |
@@ -328,7 +329,7 @@ How to use
 <summary>With conda</summary>
 
 ```
-conda install go-cgo_linux-64 go-cgo_linux-aarch64 go-cgo_linux-ppc64le go-cgo_linux-riscv64 go-cgo_osx-64 go-cgo_osx-arm64 go-cgo_win-64 go-nocgo_linux-64 go-nocgo_linux-aarch64 go-nocgo_linux-ppc64le go-nocgo_linux-riscv64 go-nocgo_osx-64 go-nocgo_osx-arm64 go-nocgo_win-64 go-nocgo_win-arm64
+conda install go-cgo_linux-64 go-cgo_linux-aarch64 go-cgo_linux-ppc64le go-cgo_linux-riscv64 go-cgo_osx-64 go-cgo_osx-arm64 go-cgo_win-64 go-cgo_win-arm64 go-nocgo_linux-64 go-nocgo_linux-aarch64 go-nocgo_linux-ppc64le go-nocgo_linux-riscv64 go-nocgo_osx-64 go-nocgo_osx-arm64 go-nocgo_win-64 go-nocgo_win-arm64
 ```
 
 </details>
@@ -337,7 +338,7 @@ conda install go-cgo_linux-64 go-cgo_linux-aarch64 go-cgo_linux-ppc64le go-cgo_l
 <summary>With mamba</summary>
 
 ```
-mamba install go-cgo_linux-64 go-cgo_linux-aarch64 go-cgo_linux-ppc64le go-cgo_linux-riscv64 go-cgo_osx-64 go-cgo_osx-arm64 go-cgo_win-64 go-nocgo_linux-64 go-nocgo_linux-aarch64 go-nocgo_linux-ppc64le go-nocgo_linux-riscv64 go-nocgo_osx-64 go-nocgo_osx-arm64 go-nocgo_win-64 go-nocgo_win-arm64
+mamba install go-cgo_linux-64 go-cgo_linux-aarch64 go-cgo_linux-ppc64le go-cgo_linux-riscv64 go-cgo_osx-64 go-cgo_osx-arm64 go-cgo_win-64 go-cgo_win-arm64 go-nocgo_linux-64 go-nocgo_linux-aarch64 go-nocgo_linux-ppc64le go-nocgo_linux-riscv64 go-nocgo_osx-64 go-nocgo_osx-arm64 go-nocgo_win-64 go-nocgo_win-arm64
 ```
 
 </details>
@@ -347,9 +348,9 @@ mamba install go-cgo_linux-64 go-cgo_linux-aarch64 go-cgo_linux-ppc64le go-cgo_l
 
 ```
 # for adding to your local project
-pixi add go-cgo_linux-64 go-cgo_linux-aarch64 go-cgo_linux-ppc64le go-cgo_linux-riscv64 go-cgo_osx-64 go-cgo_osx-arm64 go-cgo_win-64 go-nocgo_linux-64 go-nocgo_linux-aarch64 go-nocgo_linux-ppc64le go-nocgo_linux-riscv64 go-nocgo_osx-64 go-nocgo_osx-arm64 go-nocgo_win-64 go-nocgo_win-arm64
+pixi add go-cgo_linux-64 go-cgo_linux-aarch64 go-cgo_linux-ppc64le go-cgo_linux-riscv64 go-cgo_osx-64 go-cgo_osx-arm64 go-cgo_win-64 go-cgo_win-arm64 go-nocgo_linux-64 go-nocgo_linux-aarch64 go-nocgo_linux-ppc64le go-nocgo_linux-riscv64 go-nocgo_osx-64 go-nocgo_osx-arm64 go-nocgo_win-64 go-nocgo_win-arm64
 # for installing globally
-pixi global install go-cgo_linux-64 go-cgo_linux-aarch64 go-cgo_linux-ppc64le go-cgo_linux-riscv64 go-cgo_osx-64 go-cgo_osx-arm64 go-cgo_win-64 go-nocgo_linux-64 go-nocgo_linux-aarch64 go-nocgo_linux-ppc64le go-nocgo_linux-riscv64 go-nocgo_osx-64 go-nocgo_osx-arm64 go-nocgo_win-64 go-nocgo_win-arm64
+pixi global install go-cgo_linux-64 go-cgo_linux-aarch64 go-cgo_linux-ppc64le go-cgo_linux-riscv64 go-cgo_osx-64 go-cgo_osx-arm64 go-cgo_win-64 go-cgo_win-arm64 go-nocgo_linux-64 go-nocgo_linux-aarch64 go-nocgo_linux-ppc64le go-nocgo_linux-riscv64 go-nocgo_osx-64 go-nocgo_osx-arm64 go-nocgo_win-64 go-nocgo_win-arm64
 ```
 
 </details>
