@@ -11,7 +11,7 @@ Home: https://golang.org/
 
 Package license: BSD-3-Clause
 
-Summary: The Go (cgo) compiler activation scripts for conda-build.
+Summary: The Go (cgo) compiler activation for conda-build.
 
 Development: https://go.googlesource.com/go
 
@@ -33,7 +33,7 @@ Home: https://golang.org/
 
 Package license: BSD-3-Clause
 
-Summary: The Go (nocgo) compiler activation scripts for conda-build.
+Summary: The Go (nocgo) compiler activation for conda-build.
 
 Development: https://go.googlesource.com/go
 
@@ -55,7 +55,7 @@ Home: https://golang.org/
 
 Package license: BSD-3-Clause
 
-Summary: The Go (nocgo) compiler activation scripts for conda-build.
+Summary: The Go (nocgo) compiler activation for conda-build.
 
 Development: https://go.googlesource.com/go
 
@@ -77,7 +77,7 @@ Home: https://golang.org/
 
 Package license: BSD-3-Clause
 
-Summary: The Go (nocgo) compiler activation scripts for conda-build.
+Summary: The Go (nocgo) compiler activation for conda-build.
 
 Development: https://go.googlesource.com/go
 
@@ -99,7 +99,7 @@ Home: https://golang.org/
 
 Package license: BSD-3-Clause
 
-Summary: The Go (nocgo) compiler activation scripts for conda-build.
+Summary: The Go (nocgo) compiler activation for conda-build.
 
 Development: https://go.googlesource.com/go
 
@@ -121,7 +121,7 @@ Home: https://golang.org/
 
 Package license: BSD-3-Clause
 
-Summary: The Go (nocgo) compiler activation scripts for conda-build.
+Summary: The Go (nocgo) compiler activation for conda-build.
 
 Development: https://go.googlesource.com/go
 
@@ -143,7 +143,7 @@ Home: https://golang.org/
 
 Package license: BSD-3-Clause
 
-Summary: The Go (nocgo) compiler activation scripts for conda-build.
+Summary: The Go (nocgo) compiler activation for conda-build.
 
 Development: https://go.googlesource.com/go
 
@@ -165,7 +165,7 @@ Home: https://golang.org/
 
 Package license: BSD-3-Clause
 
-Summary: The Go (nocgo) compiler activation scripts for conda-build.
+Summary: The Go (nocgo) compiler activation for conda-build.
 
 Development: https://go.googlesource.com/go
 
@@ -187,7 +187,7 @@ Home: https://golang.org/
 
 Package license: BSD-3-Clause
 
-Summary: The Go (nocgo) compiler activation scripts for conda-build.
+Summary: The Go (nocgo) compiler activation for conda-build.
 
 Development: https://go.googlesource.com/go
 
