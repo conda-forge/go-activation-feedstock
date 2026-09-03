@@ -1,13 +1,15 @@
 @echo on
-rem Install [de]activate scripts.
-for %%F in (activate deactivate) do (
-  if not exist "%PREFIX%\etc\conda\%%F.d" mkdir "%PREFIX%\etc\conda\%%F.d"
-  if errorlevel 1 exit 1
+if not exist "%PREFIX%\etc\conda\env_vars.d" mkdir "%PREFIX%\etc\conda\env_vars.d"
+if errorlevel 1 exit 1
 
-  rem First, copy them to the work directory
-  copy "%RECIPE_DIR%\%%F.bat" "%PREFIX%\etc\conda\%%F.d\%%F-z61-%PKG_NAME%.bat"
-  if errorlevel 1 exit 1
-)
+set "ENV_VARS_JSON=%PREFIX%\etc\conda\env_vars.d\%PKG_NAME%.json"
 
->> "%PREFIX%\etc\conda\activate.d\activate-z61-%PKG_NAME%.bat" echo set "GOOS=%GOOS%"
->> "%PREFIX%\etc\conda\activate.d\activate-z61-%PKG_NAME%.bat" echo set "GOARCH=%GOARCH%"
+rem The variant dependent values are passed in as environment variables by the recipe.
+>  "%ENV_VARS_JSON%" echo {
+>> "%ENV_VARS_JSON%" echo   "CGO_ENABLED": "%CGO_ENABLED%",
+>> "%ENV_VARS_JSON%" echo   "CONDA_GO_COMPILER": "1",
+>> "%ENV_VARS_JSON%" echo   "GOARCH": "%GOARCH%",
+>> "%ENV_VARS_JSON%" echo   "GOFLAGS": "%GOFLAGS%",
+>> "%ENV_VARS_JSON%" echo   "GOOS": "%GOOS%"
+>> "%ENV_VARS_JSON%" echo }
+if errorlevel 1 exit 1
