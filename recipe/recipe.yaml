@@ -12,8 +12,6 @@ source:
 
 build:
   number: 1
-  skip:
-    - go_variant_str == "cgo" and cross_target_platform == "win-arm64"
   script:
     file: build
     # Everything that depends on the variant is computed here and written into
