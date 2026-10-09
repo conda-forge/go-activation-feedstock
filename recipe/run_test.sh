@@ -14,10 +14,11 @@ test "${CONDA_GO_COMPILER}" == 1
 test "$(go env GOBIN)" == "$CONDA_PREFIX/bin"
 
 
-# Test GOPATH is set to SRC-DIR
-# We cannot use that here though as conda-build checks for
-# the existence of SRC-DIR for an old behaviour change.
-test "$(go env GOPATH)" == "${PWD}/gopath"
+# Test GOPATH is set to SRC-DIR.
+# rattler-build does not set SRC_DIR in the test environment, so point it at the
+# test directory to exercise the patched default.
+export SRC_DIR="${SRC_DIR:-${PWD}}"
+test "$(go env GOPATH)" == "${SRC_DIR}/gopath"
 
 
 # Print diagnostics
