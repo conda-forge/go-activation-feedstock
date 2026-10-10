@@ -15,9 +15,9 @@ build:
   skip:
     - go_variant_str == "cgo" and cross_target_platform == "win-arm64"
   script:
-    file: ${{ "build.sh" if unix else "build.bat" }}
-    # The [de]activate scripts are templates; everything that depends on the
-    # variant is computed here and substituted while installing them.
+    file: build
+    # Everything that depends on the variant is computed here and written into
+    # the etc/conda/env_vars.d JSON file by the build script.
     env:
       GOOS: ${{ GOOS }}
       GOARCH: ${{ GOARCH }}
@@ -39,6 +39,11 @@ requirements:
         then: __osx >=10.12
 
 tests:
+  - package_contents:
+      files:
+        - etc/conda/env_vars.d/go-${{ go_variant_str }}_${{ cross_target_platform }}.json
+        - etc/conda/test-files/**/*
+      strict: true
   - script:
       file: ${{ "run_test.sh" if unix else "run_test.bat" }}
       env:
@@ -60,7 +65,7 @@ about:
   homepage: https://golang.org
   license: BSD-3-Clause
   license_file: LICENSE.txt
-  summary: The Go (${{ go_variant_str }}) compiler activation scripts for conda-build.
+  summary: The Go (${{ go_variant_str }}) compiler activation for conda-build.
   description: |
     This package enables the CONDA_GO_COMPILER environment variable.
     This variable is used by conda-forge's patched GoLang compiler to
