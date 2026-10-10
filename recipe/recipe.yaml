@@ -1,5 +1,5 @@
 context:
-  version: "1.25.12"
+  version: "1.25.14"
 
 package:
   name: go-${{ go_variant_str }}_${{ cross_target_platform }}
@@ -8,7 +8,7 @@ package:
 source:
   # Add a source we don't need so that the bot issues PRs here automatically.
   url: https://dl.google.com/go/go${{ version }}.src.tar.gz
-  sha256: f90dcee4bd023fa376374ea0a5a6ebe553537b39c426ffd8c689469b45519932
+  sha256: 9e83f44f5fc297378861b4e16cc6aa114be8add7993fb3ceb2c512380aa4d582
 
 build:
   number: 0
