@@ -11,7 +11,7 @@ source:
   sha256: 6e7749035cf360f06b2575d162ea79df9fda8ef671889e5c375f8e50777f26bb
 
 build:
-  number: 0
+  number: 1
   skip: target_platform == "win-arm64" and go_variant_str == "cgo"
   script:
     file: build
@@ -23,8 +23,10 @@ build:
       CGO_ENABLED: ${{ "1" if go_variant_str == "cgo" else "0" }}
       # Go cannot internally link PIE for linux/riscv64, so -buildmode=pie there
       # requires external (cgo) linking, which is unavailable with CGO_ENABLED=0.
-      # Every other nocgo target supports internal PIE linking and keeps it.
-      GOFLAGS: ${{ "-modcacherw -trimpath" if go_variant_str == "nocgo" and GOARCH == "riscv64" else "-modcacherw -buildmode=pie -trimpath" }}
+      # On linux/ppc64le, golang.org/x/sys v0.49.0 breaks PIE binaries at startup
+      # (https://github.com/golang/go/issues/82324), so build plain executables there.
+      # Every other target keeps -buildmode=pie.
+      GOFLAGS: ${{ "-modcacherw -trimpath" if (go_variant_str == "nocgo" and GOARCH == "riscv64") or (GOOS == "linux" and GOARCH == "ppc64le") else "-modcacherw -buildmode=pie -trimpath" }}
 
 requirements:
   run:
