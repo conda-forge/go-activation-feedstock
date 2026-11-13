@@ -5,209 +5,209 @@
 jobs:
 - job: osx
   pool:
-    vmImage: $(VMIMAGE)
+    vmImage: $(vm_image)
   strategy:
     matrix:
       osx_64_GOARCHamd64cross_target_platformosx-64go_variant_strcgo:
         CONFIG: osx_64_GOARCHamd64cross_target_platformosx-64go_variant_strcgo
         UPLOAD_PACKAGES: 'True'
-        VMIMAGE: macOS-15
         build_workspace_dir: ~/miniforge3/conda-bld
         free_disk_space: skip
         pagefile_size: 0
         resize_partitions: false
         store_build_artifacts: false
         tools_install_dir: ~/miniforge3
+        vm_image: macOS-15
       osx_64_GOARCHamd64cross_target_platformosx-64go_variant_strnocgo:
         CONFIG: osx_64_GOARCHamd64cross_target_platformosx-64go_variant_strnocgo
         UPLOAD_PACKAGES: 'True'
-        VMIMAGE: macOS-15
         build_workspace_dir: ~/miniforge3/conda-bld
         free_disk_space: skip
         pagefile_size: 0
         resize_partitions: false
         store_build_artifacts: false
         tools_install_dir: ~/miniforge3
+        vm_image: macOS-15
       osx_64_GOARCHarm64cross_target_platformosx-arm64go_variant_strcgo:
         CONFIG: osx_64_GOARCHarm64cross_target_platformosx-arm64go_variant_strcgo
         UPLOAD_PACKAGES: 'True'
-        VMIMAGE: macOS-15
         build_workspace_dir: ~/miniforge3/conda-bld
         free_disk_space: skip
         pagefile_size: 0
         resize_partitions: false
         store_build_artifacts: false
         tools_install_dir: ~/miniforge3
+        vm_image: macOS-15
       osx_64_GOARCHarm64cross_target_platformosx-arm64go_variant_strnocgo:
         CONFIG: osx_64_GOARCHarm64cross_target_platformosx-arm64go_variant_strnocgo
         UPLOAD_PACKAGES: 'True'
-        VMIMAGE: macOS-15
         build_workspace_dir: ~/miniforge3/conda-bld
         free_disk_space: skip
         pagefile_size: 0
         resize_partitions: false
         store_build_artifacts: false
         tools_install_dir: ~/miniforge3
+        vm_image: macOS-15
       osx_arm64_GOARCHamd64GOOSdarwincross_target_platformosx-64go_variant_strcgo:
         CONFIG: osx_arm64_GOARCHamd64GOOSdarwincross_target_platformosx-64go_variant_strcgo
         UPLOAD_PACKAGES: 'True'
-        VMIMAGE: macOS-15-arm64
         build_workspace_dir: ~/miniforge3/conda-bld
         free_disk_space: skip
         pagefile_size: 0
         resize_partitions: false
         store_build_artifacts: false
         tools_install_dir: ~/miniforge3
+        vm_image: macOS-15-arm64
       osx_arm64_GOARCHamd64GOOSdarwincross_target_platformosx-64go_variant_strnocgo:
         CONFIG: osx_arm64_GOARCHamd64GOOSdarwincross_target_platformosx-64go_variant_strnocgo
         UPLOAD_PACKAGES: 'True'
-        VMIMAGE: macOS-15-arm64
         build_workspace_dir: ~/miniforge3/conda-bld
         free_disk_space: skip
         pagefile_size: 0
         resize_partitions: false
         store_build_artifacts: false
         tools_install_dir: ~/miniforge3
+        vm_image: macOS-15-arm64
       osx_arm64_GOARCHamd64GOOSlinuxcross_target_platformlinux-64go_variant_strcgo:
         CONFIG: osx_arm64_GOARCHamd64GOOSlinuxcross_target_platformlinux-64go_variant_strcgo
         UPLOAD_PACKAGES: 'True'
-        VMIMAGE: macOS-15-arm64
         build_workspace_dir: ~/miniforge3/conda-bld
         free_disk_space: skip
         pagefile_size: 0
         resize_partitions: false
         store_build_artifacts: false
         tools_install_dir: ~/miniforge3
+        vm_image: macOS-15-arm64
       osx_arm64_GOARCHamd64GOOSlinuxcross_target_platformlinux-64go_variant_strnocgo:
         CONFIG: osx_arm64_GOARCHamd64GOOSlinuxcross_target_platformlinux-64go_variant_strnocgo
         UPLOAD_PACKAGES: 'True'
-        VMIMAGE: macOS-15-arm64
         build_workspace_dir: ~/miniforge3/conda-bld
         free_disk_space: skip
         pagefile_size: 0
         resize_partitions: false
         store_build_artifacts: false
         tools_install_dir: ~/miniforge3
+        vm_image: macOS-15-arm64
       osx_arm64_GOARCHamd64GOOSwindowscross_target_platformwin-64go_variant_strcgo:
         CONFIG: osx_arm64_GOARCHamd64GOOSwindowscross_target_platformwin-64go_variant_strcgo
         UPLOAD_PACKAGES: 'True'
-        VMIMAGE: macOS-15-arm64
         build_workspace_dir: ~/miniforge3/conda-bld
         free_disk_space: skip
         pagefile_size: 0
         resize_partitions: false
         store_build_artifacts: false
         tools_install_dir: ~/miniforge3
+        vm_image: macOS-15-arm64
       osx_arm64_GOARCHamd64GOOSwindowscross_target_platformwin-64go_variant_strnocgo:
         CONFIG: osx_arm64_GOARCHamd64GOOSwindowscross_target_platformwin-64go_variant_strnocgo
         UPLOAD_PACKAGES: 'True'
-        VMIMAGE: macOS-15-arm64
         build_workspace_dir: ~/miniforge3/conda-bld
         free_disk_space: skip
         pagefile_size: 0
         resize_partitions: false
         store_build_artifacts: false
         tools_install_dir: ~/miniforge3
+        vm_image: macOS-15-arm64
       osx_arm64_GOARCHarm64GOOSdarwincross_target_platformosx-arm64go_variant_strcgo:
         CONFIG: osx_arm64_GOARCHarm64GOOSdarwincross_target_platformosx-arm64go_variant_strcgo
         UPLOAD_PACKAGES: 'True'
-        VMIMAGE: macOS-15-arm64
         build_workspace_dir: ~/miniforge3/conda-bld
         free_disk_space: skip
         pagefile_size: 0
         resize_partitions: false
         store_build_artifacts: false
         tools_install_dir: ~/miniforge3
+        vm_image: macOS-15-arm64
       osx_arm64_GOARCHarm64GOOSdarwincross_target_platformosx-arm64go_variant_strnocgo:
         CONFIG: osx_arm64_GOARCHarm64GOOSdarwincross_target_platformosx-arm64go_variant_strnocgo
         UPLOAD_PACKAGES: 'True'
-        VMIMAGE: macOS-15-arm64
         build_workspace_dir: ~/miniforge3/conda-bld
         free_disk_space: skip
         pagefile_size: 0
         resize_partitions: false
         store_build_artifacts: false
         tools_install_dir: ~/miniforge3
+        vm_image: macOS-15-arm64
       osx_arm64_GOARCHarm64GOOSlinuxcross_target_platformlinux-aarch64go_variant_strcgo:
         CONFIG: osx_arm64_GOARCHarm64GOOSlinuxcross_target_platformlinux-aarch64go_variant_strcgo
         UPLOAD_PACKAGES: 'True'
-        VMIMAGE: macOS-15-arm64
         build_workspace_dir: ~/miniforge3/conda-bld
         free_disk_space: skip
         pagefile_size: 0
         resize_partitions: false
         store_build_artifacts: false
         tools_install_dir: ~/miniforge3
+        vm_image: macOS-15-arm64
       osx_arm64_GOARCHarm64GOOSlinuxcross_target_platformlinux-aarch64go_variant_strnocgo:
         CONFIG: osx_arm64_GOARCHarm64GOOSlinuxcross_target_platformlinux-aarch64go_variant_strnocgo
         UPLOAD_PACKAGES: 'True'
-        VMIMAGE: macOS-15-arm64
         build_workspace_dir: ~/miniforge3/conda-bld
         free_disk_space: skip
         pagefile_size: 0
         resize_partitions: false
         store_build_artifacts: false
         tools_install_dir: ~/miniforge3
+        vm_image: macOS-15-arm64
       osx_arm64_GOARCHarm64GOOSwindowscross_target_platformwin-arm64go_variant_strcgo:
         CONFIG: osx_arm64_GOARCHarm64GOOSwindowscross_target_platformwin-arm64go_variant_strcgo
         UPLOAD_PACKAGES: 'True'
-        VMIMAGE: macOS-15-arm64
         build_workspace_dir: ~/miniforge3/conda-bld
         free_disk_space: skip
         pagefile_size: 0
         resize_partitions: false
         store_build_artifacts: false
         tools_install_dir: ~/miniforge3
+        vm_image: macOS-15-arm64
       osx_arm64_GOARCHarm64GOOSwindowscross_target_platformwin-arm64go_variant_strnocgo:
         CONFIG: osx_arm64_GOARCHarm64GOOSwindowscross_target_platformwin-arm64go_variant_strnocgo
         UPLOAD_PACKAGES: 'True'
-        VMIMAGE: macOS-15-arm64
         build_workspace_dir: ~/miniforge3/conda-bld
         free_disk_space: skip
         pagefile_size: 0
         resize_partitions: false
         store_build_artifacts: false
         tools_install_dir: ~/miniforge3
+        vm_image: macOS-15-arm64
       osx_arm64_GOARCHppc64leGOOSlinuxcross_target_platformlinux-ppc64lego_variant_strcgo:
         CONFIG: osx_arm64_GOARCHppc64leGOOSlinuxcross_target_platformlinux-ppc64lego_variant_strcgo
         UPLOAD_PACKAGES: 'True'
-        VMIMAGE: macOS-15-arm64
         build_workspace_dir: ~/miniforge3/conda-bld
         free_disk_space: skip
         pagefile_size: 0
         resize_partitions: false
         store_build_artifacts: false
         tools_install_dir: ~/miniforge3
+        vm_image: macOS-15-arm64
       osx_arm64_GOARCHppc64leGOOSlinuxcross_target_platformlinux-ppc64lego_variant_strnocgo:
         CONFIG: osx_arm64_GOARCHppc64leGOOSlinuxcross_target_platformlinux-ppc64lego_variant_strnocgo
         UPLOAD_PACKAGES: 'True'
-        VMIMAGE: macOS-15-arm64
         build_workspace_dir: ~/miniforge3/conda-bld
         free_disk_space: skip
         pagefile_size: 0
         resize_partitions: false
         store_build_artifacts: false
         tools_install_dir: ~/miniforge3
+        vm_image: macOS-15-arm64
       osx_arm64_GOARCHriscv64GOOSlinuxcross_target_platformlinux-riscv64go_variant_strcgo:
         CONFIG: osx_arm64_GOARCHriscv64GOOSlinuxcross_target_platformlinux-riscv64go_variant_strcgo
         UPLOAD_PACKAGES: 'True'
-        VMIMAGE: macOS-15-arm64
         build_workspace_dir: ~/miniforge3/conda-bld
         free_disk_space: skip
         pagefile_size: 0
         resize_partitions: false
         store_build_artifacts: false
         tools_install_dir: ~/miniforge3
+        vm_image: macOS-15-arm64
       osx_arm64_GOARCHriscv64GOOSlinuxcross_target_platformlinux-riscv64go_variant_strnocgo:
         CONFIG: osx_arm64_GOARCHriscv64GOOSlinuxcross_target_platformlinux-riscv64go_variant_strnocgo
         UPLOAD_PACKAGES: 'True'
-        VMIMAGE: macOS-15-arm64
         build_workspace_dir: ~/miniforge3/conda-bld
         free_disk_space: skip
         pagefile_size: 0
         resize_partitions: false
         store_build_artifacts: false
         tools_install_dir: ~/miniforge3
+        vm_image: macOS-15-arm64
   timeoutInMinutes: 360
   variables: {}
 
