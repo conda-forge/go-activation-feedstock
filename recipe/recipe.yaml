@@ -11,7 +11,7 @@ source:
   sha256: 73cfb8571aec0c01177687db87163d46aa20e9779672772891aa17654d9a6099
 
 build:
-  number: 0
+  number: 1
   skip: target_platform == "win-arm64" and go_variant_str == "cgo"
   script:
     file: build
@@ -35,9 +35,8 @@ requirements:
     strong:
       - if: cross_target_platform == "linux-64" and go_variant_str == "cgo"
         then: __glibc >=2.17
-    strong_constraints:
-      - if: cross_target_platform == "osx-64"
-        then: __osx >=10.12
+      - if: GOOS == "darwin"
+        then: __osx >=13.0
 
 tests:
   - package_contents:
